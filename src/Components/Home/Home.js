@@ -5,8 +5,8 @@ function Home() {
 
     return (
         <div>
-            <h1>Hello,</h1>
-            <h2>I am Teresa, a UI/UX Designer and Frontend Developer</h2>
+            <h1>HELLO,</h1>
+            <h2>I AM TERESA, A UI/UX DESIGNER AND FRONTEND DEVELOPER</h2>
             <Link to="/projects"><button>Projects</button></Link>
         </div>
     );
