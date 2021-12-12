@@ -8,10 +8,15 @@ function Contact() {
         message: ''
     });
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+    }
+
     return (
         <div>
            <div className="form-container"> 
-                <form>
+                <form onSubmit={onSubmit}>
                     <input 
                         type="text"
                         name="user_name"
@@ -27,6 +32,9 @@ function Contact() {
                         name="message"
                         placeholder="MESSAGE..."
                     />
+                    <div className="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div> 
         </div>
