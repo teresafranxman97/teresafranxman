@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { send, init } from 'emailjs-com';
+import { send } from 'emailjs-com';
 
 function Contact() {
     const [ toSend, setToSend ] = useState({
@@ -10,7 +10,18 @@ function Contact() {
 
     const onSubmit = (e) => {
         e.preventDefault();
-
+        send(
+            'service_1gaftse',
+            'contact_form',
+            toSend,
+            'user_08idYLJZO7AtHuPUQ55EA'
+        )
+        .then((res) => {
+            console.log("Success!", res.status, res.text)
+        })
+        .catch((err) => {
+            console.log("Failed...", err)
+        })
     }
 
     const handleChange = (e) => {
