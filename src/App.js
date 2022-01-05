@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Route, Routes } from "react-router-dom" ;
-import Home from './Components/Home/Home';
+import LandingPage from './Components/LandingPage/LandingPage';
 import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
 import Contact from './Components/Contact/Contact';
@@ -16,7 +16,7 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route exact path="/teresafranxman" element={<Home/> } />  
+        <Route exact path="/teresafranxman" element={<LandingPage/> } />  
         <Route path="/projects" element={<Projects projects={projects}/>  } />
         <Route path="/skills" element={<Skills/>} />
         <Route path="/contact" element={<Contact/>} />

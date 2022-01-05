@@ -48,6 +48,7 @@ function Contact() {
 				<form onSubmit={onSubmit}>
                     <label>Name</label>
 					<input
+						required
 						type="text"
 						name="user_name"
 						placeholder="NAME"
@@ -56,6 +57,7 @@ function Contact() {
 					/>
                     <label>Email</label>
 					<input
+						required
 						type="text"
 						name="user_email"
 						placeholder="EMAIL"
