@@ -5,9 +5,9 @@ function LandingPage() {
 
     return (
         <div>
-            <h1>Hi.</h1>
-            <h2>I AM TERESA.</h2>
-            <h2>UI/UX DESIGNER AND FRONTEND DEVELOPER</h2>
+            <h1>Hi</h1>
+            <h1>I AM TERESA</h1>
+            <h1>UI/UX DESIGNER <span> & </span> <br/> FRONTEND DEVELOPER</h1>
             <Link to="/projects"><button>Projects</button></Link>
         </div>
     );
