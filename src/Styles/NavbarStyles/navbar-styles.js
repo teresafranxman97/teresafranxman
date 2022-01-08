@@ -3,7 +3,7 @@ import styled from "styled-components";
 const NavStyles = styled.div`
 	nav {
 		display: flex;
-		justify-content: end;
+		justify-content: space-between;
 	}
 
 	
