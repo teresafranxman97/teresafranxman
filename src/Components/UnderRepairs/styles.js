@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const Styled = styled.div`
-	height: 50%;
+	padding-top: 20rem;
 	text-align: center;
+	font-size: 30px;
 `;
 
 export default Styled;
