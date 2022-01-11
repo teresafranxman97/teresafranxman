@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/teresafranxman/static/css/main.7c99250e.chunk.css",
-    "main.js": "/teresafranxman/static/js/main.0a002cb5.chunk.js",
-    "main.js.map": "/teresafranxman/static/js/main.0a002cb5.chunk.js.map",
-    "runtime-main.js": "/teresafranxman/static/js/runtime-main.3f7e2595.js",
-    "runtime-main.js.map": "/teresafranxman/static/js/runtime-main.3f7e2595.js.map",
-    "static/js/2.5137a35c.chunk.js": "/teresafranxman/static/js/2.5137a35c.chunk.js",
-    "static/js/2.5137a35c.chunk.js.map": "/teresafranxman/static/js/2.5137a35c.chunk.js.map",
-    "static/js/3.0403eace.chunk.js": "/teresafranxman/static/js/3.0403eace.chunk.js",
-    "static/js/3.0403eace.chunk.js.map": "/teresafranxman/static/js/3.0403eace.chunk.js.map",
+    "main.css": "/teresafranxman/static/css/main.47ce1995.chunk.css",
+    "main.js": "/teresafranxman/static/js/main.e84022d8.chunk.js",
+    "main.js.map": "/teresafranxman/static/js/main.e84022d8.chunk.js.map",
+    "runtime-main.js": "/teresafranxman/static/js/runtime-main.c0ec7109.js",
+    "runtime-main.js.map": "/teresafranxman/static/js/runtime-main.c0ec7109.js.map",
+    "static/js/2.c5700176.chunk.js": "/teresafranxman/static/js/2.c5700176.chunk.js",
+    "static/js/2.c5700176.chunk.js.map": "/teresafranxman/static/js/2.c5700176.chunk.js.map",
+    "static/js/3.3232bb61.chunk.js": "/teresafranxman/static/js/3.3232bb61.chunk.js",
+    "static/js/3.3232bb61.chunk.js.map": "/teresafranxman/static/js/3.3232bb61.chunk.js.map",
     "index.html": "/teresafranxman/index.html",
-    "static/css/main.7c99250e.chunk.css.map": "/teresafranxman/static/css/main.7c99250e.chunk.css.map",
-    "static/js/2.5137a35c.chunk.js.LICENSE.txt": "/teresafranxman/static/js/2.5137a35c.chunk.js.LICENSE.txt"
+    "static/css/main.47ce1995.chunk.css.map": "/teresafranxman/static/css/main.47ce1995.chunk.css.map",
+    "static/js/2.c5700176.chunk.js.LICENSE.txt": "/teresafranxman/static/js/2.c5700176.chunk.js.LICENSE.txt",
+    "static/media/googleclone.2991da1c.png": "/teresafranxman/static/media/googleclone.2991da1c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3f7e2595.js",
-    "static/js/2.5137a35c.chunk.js",
-    "static/css/main.7c99250e.chunk.css",
-    "static/js/main.0a002cb5.chunk.js"
+    "static/js/runtime-main.c0ec7109.js",
+    "static/js/2.c5700176.chunk.js",
+    "static/css/main.47ce1995.chunk.css",
+    "static/js/main.e84022d8.chunk.js"
   ]
 }
