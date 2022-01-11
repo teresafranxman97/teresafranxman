@@ -10,6 +10,7 @@ const ProjectsStyles = styled.div`
 
 	.project-content {
         margin: 1em;
+        width: 40%;
 		border: 1px solid pink;
 	}
 
@@ -17,7 +18,7 @@ const ProjectsStyles = styled.div`
 		width: 100%;
 	}
 
-	@media (min-width: 480px) {
+	@media (max-width: 768px) {
 		.project-content {
 			width: 100%;
 		}
