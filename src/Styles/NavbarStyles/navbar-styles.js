@@ -10,7 +10,7 @@ const NavStyles = styled.div`
 
 	a {
 		color: white;
-		margin-left: 2vw;
+		margin-left: 1vw;
 		font-weight: bold;
 		font-size: 20px;
 		text-decoration: none;

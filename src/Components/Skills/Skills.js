@@ -12,8 +12,8 @@ const Skills = () => {
 			<div className="content">
 				{skills.map((skill) => (
 					<div className="skills-container" key={skill.id}>
-						<Icon icon={skill.icon} alt="logo" width={70} className="icon" />
-						<h5>{skill.title}</h5>
+						<Icon icon={skill.icon} alt="logo" width={80} className="icon" />
+						<h3>{skill.title}</h3>
 					</div>
 				))}
 			</div>

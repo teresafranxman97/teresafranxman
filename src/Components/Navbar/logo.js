@@ -1,9 +1,10 @@
 import React from "react";
+import { Link  } from "react-router-dom";
 
 const Logo = () => {
     return (
         <div>
-            <h2>tf</h2>
+            <Link to="/teresafranxman"> <h2>tf</h2> </Link>
         </div>
     )
 }

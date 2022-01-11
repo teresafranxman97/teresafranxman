@@ -1,20 +1,30 @@
-import React from "react"; 
+import React from "react";
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
+import ProjectsStyles from "../../Styles/Projects/ProjectsStyles";
 
 const Projects = (props) => {
-    const { projects} = props;
+	const { projects } = props;
 
-    return (
-        <div className="projects-container">
-            <h1>Projects</h1>
-            {projects.map((project) => (
-                <div className="project-container" key={project.id}>
-                    <h1>{project.title}</h1>
-                    <h3>{project.description}</h3>
-                    <img src={ project.src } alt="google-clone" width={400} />
-                </div>   
-            ))}
-        </div>
-    )
+	return (
+		<ProjectsStyles className="projects-container">
+			<h1>Projects</h1>
+			<div className="project-container">
+				{projects.map((project) => (
+					<div className="project-content" key={project.id}>
+						<img src={project.src} alt="google-clone" />
+						<h2>{project.title}</h2>
+						<h3>{project.position}</h3>
+						<p>{project.description}</p>
+						<Link to="">
+							{" "}
+							View <Icon icon="akar-icons:arrow-right" />{" "}
+						</Link>
+					</div>
+				))}
+			</div>
+		</ProjectsStyles>
+	);
 };
 
 export default Projects;
