@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/teresafranxman/static/css/main.47ce1995.chunk.css",
-    "main.js": "/teresafranxman/static/js/main.e84022d8.chunk.js",
-    "main.js.map": "/teresafranxman/static/js/main.e84022d8.chunk.js.map",
+    "main.js": "/teresafranxman/static/js/main.c0225ef4.chunk.js",
+    "main.js.map": "/teresafranxman/static/js/main.c0225ef4.chunk.js.map",
     "runtime-main.js": "/teresafranxman/static/js/runtime-main.c0ec7109.js",
     "runtime-main.js.map": "/teresafranxman/static/js/runtime-main.c0ec7109.js.map",
-    "static/js/2.c5700176.chunk.js": "/teresafranxman/static/js/2.c5700176.chunk.js",
-    "static/js/2.c5700176.chunk.js.map": "/teresafranxman/static/js/2.c5700176.chunk.js.map",
+    "static/js/2.167fe5e6.chunk.js": "/teresafranxman/static/js/2.167fe5e6.chunk.js",
+    "static/js/2.167fe5e6.chunk.js.map": "/teresafranxman/static/js/2.167fe5e6.chunk.js.map",
     "static/js/3.3232bb61.chunk.js": "/teresafranxman/static/js/3.3232bb61.chunk.js",
     "static/js/3.3232bb61.chunk.js.map": "/teresafranxman/static/js/3.3232bb61.chunk.js.map",
     "index.html": "/teresafranxman/index.html",
     "static/css/main.47ce1995.chunk.css.map": "/teresafranxman/static/css/main.47ce1995.chunk.css.map",
-    "static/js/2.c5700176.chunk.js.LICENSE.txt": "/teresafranxman/static/js/2.c5700176.chunk.js.LICENSE.txt",
+    "static/js/2.167fe5e6.chunk.js.LICENSE.txt": "/teresafranxman/static/js/2.167fe5e6.chunk.js.LICENSE.txt",
     "static/media/googleclone.2991da1c.png": "/teresafranxman/static/media/googleclone.2991da1c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c0ec7109.js",
-    "static/js/2.c5700176.chunk.js",
+    "static/js/2.167fe5e6.chunk.js",
     "static/css/main.47ce1995.chunk.css",
-    "static/js/main.e84022d8.chunk.js"
+    "static/js/main.c0225ef4.chunk.js"
   ]
 }
