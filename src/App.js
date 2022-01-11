@@ -6,6 +6,7 @@ import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import AppStyles from "./Styles/app-styles";
+import Repairs from "./Components/UnderRepairs/Repairs";
 
 import data from "./data";
 
@@ -15,10 +16,10 @@ function App() {
 	return (
 		<AppStyles>
 			<div className="app-container">
-				<Navbar />
+				{/* <Navbar /> */}
 
 				<Routes>
-					<Route exact path="/teresafranxman" element={<LandingPage />} />
+					<Route exact path="/teresafranxman" element={<Repairs />} />
 					<Route path="/projects" element={<Projects projects={projects} />} />
 					<Route path="/skills" element={<Skills />} />
 					<Route path="/contact" element={<Contact />} />
