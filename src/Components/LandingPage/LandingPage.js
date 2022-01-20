@@ -9,10 +9,7 @@ function LandingPage() {
 		<Styled>
 			<div className="container">
 				<div className="content-container">
-					<h1><span>hello</span>,</h1>
-					<h2>
-						I am Teresa.
-					</h2>
+					<h2>I am Teresa.</h2>
 					<p>Front End Developer creating quality driven user experiences on the web. </p>
 				</div>
 				<div className="links-container">
