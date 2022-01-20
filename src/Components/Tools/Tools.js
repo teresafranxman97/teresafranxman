@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import data from "./skills-data";
+import data from "./tools-data";
 import { Icon } from "@iconify/react";
 import StyledSkills from "../../Styles/Skills/skills-styles";
 
-const Skills = () => {
+const Tools = () => {
 	const [skills] = useState(data);
 
 	return (
 		<StyledSkills>
-            <h1>Tech Stack</h1>
+            <h1>Tools I use to plan, design, and build quality applications. </h1>
 			<div className="content">
 				{skills.map((skill) => (
 					<div className="skills-container" key={skill.id}>
@@ -21,4 +21,4 @@ const Skills = () => {
 	);
 };
 
-export default Skills;
+export default Tools;

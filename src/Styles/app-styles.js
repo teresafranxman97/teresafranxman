@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const AppStyles = styled.div`
-	background-color: #080e29;
-	color: #ffffff;
+	background-color: #FFF;
+	color: black;
 	padding-left: 1em;
 	padding-right: 1em;
 

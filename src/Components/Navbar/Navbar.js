@@ -1,19 +1,27 @@
 import React from "react";
-import NavLinks from "./NavLinks";
-import NavStyles from "../../Styles/NavbarStyles/navbar-styles";
-import Logo from "./logo";
+import {NavStyles, Menu, MenuLink, Logo, Hamburger} from "../../Styles/NavbarStyles/navbar-styles";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 	return (
 		<NavStyles>
-			<nav>
-				<div className="logo-container">
-					<Logo />
-				</div>
-				<div className="links">
-					<NavLinks />
-				</div>
-			</nav>
+			<Logo>
+				<Link to="/teresafranxman">tf</Link>
+			</Logo>		
+			<Hamburger>
+				<span />
+			</Hamburger>
+			<Menu>
+			<MenuLink>
+				<Link to="/projects">Projects</Link>
+			</MenuLink>
+			<MenuLink>
+				<Link to="/tools">Tool-Kit</Link>
+			</MenuLink>
+			<MenuLink>
+				<Link to="/contact">Contact</Link>
+			</MenuLink>
+			</Menu>
 		</NavStyles>
 	);
 }

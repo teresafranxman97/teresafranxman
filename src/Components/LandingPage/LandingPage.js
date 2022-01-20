@@ -9,27 +9,23 @@ function LandingPage() {
 		<Styled>
 			<div className="container">
 				<div className="content-container">
-					<h1>
-						I AM <span>TERESA</span>
-					</h1>
-					<div>
-						<Icon icon="bi:three-dots" width={90} />
-					</div>
-					<h1>FRONT END DEVELOPER </h1>
-					<h3>&</h3>
-					<h1>UI/UX DESIGNER </h1>
+					<h1><span>hello</span>,</h1>
+					<h2>
+						I am Teresa.
+					</h2>
+					<p>Front End Developer creating quality driven user experiences on the web. </p>
+				</div>
+				<div className="links-container">
+					<Link to="/projects">
+						<button>My projects</button>
+					</Link>
 				</div>
 				<div className="icons-content">
 					<Icons />
 				</div>
-				<div className="links-container">
-					<Link to="/projects">
-						<button>PROJECTS</button>
-					</Link>
-					<Link to="/contact">
-						<button>CONTACT</button>
-					</Link>
-				</div>
+			</div>
+			<div className="divider">
+				
 			</div>
 		</Styled>
 	);

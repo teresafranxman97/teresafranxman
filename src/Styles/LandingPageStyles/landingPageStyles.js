@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Styled = styled.div`
 	text-align: center;
 
-	.content-container {
+	.divider {
 		background-color: #ccd5ff;
 	}
 `;
