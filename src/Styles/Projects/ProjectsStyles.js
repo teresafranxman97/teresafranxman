@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const ProjectsStyles = styled.div`
+
 	.project-container {
 		display: flex;
 		flex-direction: row;

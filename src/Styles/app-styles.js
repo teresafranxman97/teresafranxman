@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const AppStyles = styled.div`
-	background-color: #FFF9F5;
+	background: #FFF9F5;
 	color: black;
-	padding-left: 1em;
-	padding-right: 1em;
+	
+
 
 	.app-container {
+		margin-top: 7vh;
 		min-height: 100vh;
 	}
 `;
