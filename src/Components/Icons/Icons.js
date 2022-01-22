@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
 import React from "react";
+import IconStyles from "../../Styles/LandingPageStyles/IconStyles";
 
 const Icons = () => {
     return (
-        <div className="icons-container">
-            <Icon icon="codicon:github-alt" />
-            <Icon icon="akar-icons:linkedin-fill" />
-        </div>
+        <IconStyles>
+            <Icon className="icon" icon="codicon:github-alt" width={30} />
+            <Icon className="icon" icon="akar-icons:linkedin-fill" width={30} />
+        </IconStyles>
     )
 }
 

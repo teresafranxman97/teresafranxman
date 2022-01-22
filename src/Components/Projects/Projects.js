@@ -9,20 +9,21 @@ const Projects = (props) => {
 	return (
 		<ProjectsStyles className="projects-container">
 			<h1>Projects</h1>
-			<div className="project-container">
-				{projects.map((project) => (
-					<div className="project-content" key={project.id}>
-						<img src={project.src} alt="google-clone" />
-						<h2>{project.title}</h2>
-						<h3>{project.position}</h3>
-						<p>{project.description}</p>
-						<Link to="">
-							{" "}
-							View <Icon icon="akar-icons:arrow-right" />{" "}
-						</Link>
-					</div>
-				))}
-			</div>
+				<div className="outer-box"></div>
+				<div className="project-container">
+					{projects.map((project) => (
+						<div className="project-content" key={project.id}>
+							<img src={project.src} alt="google-clone" />
+							<h2>{project.title}</h2>
+							<h3>{project.position}</h3>
+							<p>{project.description}</p>
+							<Link to="">
+								{" "}
+								View <Icon icon="akar-icons:arrow-right" />{" "}
+							</Link>
+						</div>
+					))}
+				</div>
 		</ProjectsStyles>
 	);
 };

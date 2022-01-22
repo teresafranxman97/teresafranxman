@@ -6,7 +6,7 @@ function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<NavStyles>
+		<NavStyles isOpen={isOpen} >
 			<Logo>
 				<Link to="/teresafranxman">tf</Link>
 			</Logo>		

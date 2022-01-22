@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: #FFF9F5;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: ${({ isOpen }) => (isOpen ? "#FFE3D1" : "#FFF9F5")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,11 +14,9 @@ const NavStyles = styled.div`
 	right: 0;
 	
 	
-
 	a {
 		color: black;
 		margin-left: 1vw;
-		font-size: 20px;
 		text-decoration: none;
 	}
 `;
@@ -42,7 +42,7 @@ const Hamburger = styled.div `
 const Menu = styled.div `
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: right;
 	position: relative;
 
 	@media (max-width: 768px) {
@@ -50,7 +50,8 @@ const Menu = styled.div `
 		flex-direction: column;
 		max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
 		transition: max-height 0.3s ease-in;
-		width: 100%;
+		min-width: 100vw;
+		
 	}
 
 `
@@ -62,14 +63,14 @@ const MenuLink = styled.div `
 	transition: all 0.3s ease-in;
 	
 	&:hover {
-		color: 
+		color: #FF781F;
 	}
 
 `
 const Logo = styled.div `
 	padding: 1rem 0;
 	font-weight: 800;
-	font-size: 1.7rem;
+	font-size: 2rem;
 `
 
 

@@ -1,25 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Styled, Button } from "../../Styles/LandingPageStyles/landingPageStyles";
-import { Icon } from "@iconify/react";
 import Icons from "../Icons/Icons";
 
 function LandingPage() {
 	return (
 		<Styled>
 			<div className="container">
-				<div className="content-container">
-					<h1>I am Teresa.</h1>
+				<div className="content">
+					<h1>I am <br/> Teresa.</h1>
 					<p>Front End Developer creating quality driven user experiences on the web. </p>
-				</div>
-				<Link to="/projects">
 					<Button>
-						My projects
+						<Link to="/projects">
+							My projects
+						</Link>
 					</Button>
-				</Link>
-			</div>
-			<div className="icons-content">
-				<Icons />
+				</div>
+				<div className="box-under">
+					<div className="icons-content">
+						<Icons />
+					</div>
+				</div>
 			</div>
 		</Styled>
 	);
