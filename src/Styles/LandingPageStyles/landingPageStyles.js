@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 const Styled = styled.div`
-	
+	display: flex;
 
 	.container {
 		display: flex;
 		flex-direction: column;
-		width: 70vw;
-		align-items: left;
-		
+		justify-content: right;
+		text-align: left;
+		width: 60vw;
+		padding-left: 2em;
 	}
 	
 	h1 {
 		font-size: 8em;
-		height: 220px;
+		height: 113px;
+		line-height: 100px;
 	}
 
 	p {
@@ -23,47 +25,25 @@ const Styled = styled.div`
 	a {
 		text-decoration: none;
 	}
-	
-	.box-under {
-		background-color: #FFCEAD;
-		padding: 1em 5em;	
-	}
 
-	.icons-content {
-		background: #FFE3D1;
-		padding: 3em 14em;
 
-	}
 
 	@media (max-width: 768px) {
 		.container {
 			width: 87vw;
 		}
 
-		.content-container {
-			p {
-				font-size: 7vw;
+	}
+
+	.icons-content {
+		background: #FFE3D1;
+		margin-top: 2em;
+		width: 50vw;
+		position: inherit;
+		top: 0;
+	}
+
 	
-			}
-
-			h1 {
-				font-size: 6em;
-			}
-		}
-		
-
-		.icons-content {
-			bottom: 80px;
-		}
-	}
-
-	@media (max-width: 480px) {
-		.content-container, h1 {
-			font-size: 12px;
-		}
-
-		
-	}
 `;
 
 const Button = styled.div `

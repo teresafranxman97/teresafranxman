@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Styled, Button } from "../../Styles/LandingPageStyles/landingPageStyles";
 import Icons from "../Icons/Icons";
+import IconStyles from "../../Styles/LandingPageStyles/IconStyles";
 
 function LandingPage() {
 	return (
@@ -16,12 +17,10 @@ function LandingPage() {
 						</Link>
 					</Button>
 				</div>
-				<div className="box-under">
-					<div className="icons-content">
-						<Icons />
-					</div>
-				</div>
 			</div>
+			<IconStyles className="icons-content">
+				<Icons />
+			</IconStyles>
 		</Styled>
 	);
 }

@@ -9,7 +9,7 @@ const ProjectsStyles = styled.div`
 		padding: 12em 14em;
 		left: 0;
 		background: #FFE3D1;
-		position: absolute;
+		position: fixed;
 	}
 
 	.project-container {
@@ -17,7 +17,7 @@ const ProjectsStyles = styled.div`
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		position: absolute;
+		position: relative;
 	}
 
 	.project-content {

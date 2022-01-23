@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
 	background: ${({ isOpen }) => (isOpen ? "#FFE3D1" : "#FFF9F5")};
 	display: flex;
 	justify-content: space-between;

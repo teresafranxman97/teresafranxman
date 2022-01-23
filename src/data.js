@@ -18,8 +18,7 @@ const data = [
 		description:
 			"As a lead UI/UX Engineer I conducted research pertaining to the users experience. Following the completetion of my research, I created wireframes for every necessary page of the application. Finally, utilzing Ant Design, we built the necessary components and styled them.",
 		link: "",
-	},
-	
+	},	
 ];
 
 export default data;
