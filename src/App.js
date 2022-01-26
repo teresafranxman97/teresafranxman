@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import LandingPage from "./Components/LandingPage/LandingPage";
-import Projects from "./Components/Projects/Projects";
+import LandingPage from "./Components/landingPage/LandingPage";
+import Projects from "./Components/projects/Projects";
 import Tools from "./Components/Tools/Tools";
-import Contact from "./Components/Contact/Contact";
-import Navbar from "./Components/Navbar/Navbar";
+import Contact from "./Components/contact/Contact";
+import Navbar from "./Components/navbar/Navbar";
 import AppStyles from "./Styles/app-styles";
-import Repairs from "./Components/UnderRepairs/Repairs";
-
+import Repairs from "./Components/underRepairs/Repairs";
+import Skills from './Components/skills/Skills.js';
 import data from "./data";
 
 function App() {

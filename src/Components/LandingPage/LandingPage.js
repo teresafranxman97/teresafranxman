@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Styled, Button } from "../../Styles/LandingPageStyles/landingPageStyles";
-import Icons from "../Icons/Icons";
+import Icons from "../icons/Icons";
+import { Icon } from '@iconify/react';
 import IconStyles from "../../Styles/LandingPageStyles/IconStyles";
 
 function LandingPage() {
@@ -9,8 +10,8 @@ function LandingPage() {
 		<Styled>
 			<div className="container">
 				<div className="content">
-					<h1>I am <br/> Teresa.</h1>
-					<p>Front End Developer creating quality driven user experiences on the web. </p>
+					<h1>Hi, I am Teresa.</h1>
+					<p>Front End Developer <br/> & <br/> Designer </p>
 					<Button>
 						<Link to="/projects">
 							My projects
@@ -20,6 +21,9 @@ function LandingPage() {
 			</div>
 			<IconStyles className="icons-content">
 				<Icons />
+				<div>
+					<Icon icon="bi:arrow-down-circle" />
+				</div>
 			</IconStyles>
 		</Styled>
 	);
