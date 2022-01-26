@@ -22,12 +22,9 @@ const StyledSkills = styled.div`
 	}
 
     .icon {
-        background: rgb(204,213,255);
-        background: linear-gradient(63deg, rgba(204,213,255,1) 20%, rgba(230,206,255,1) 65%, rgba(255,204,247,1) 100%);
-        color: #080e29;
+        color: black;
         border-radius: 5px 10px;
         padding: .5em;
-        opacity: 90%;
     }
 
 	@media (max-width: 380px) {

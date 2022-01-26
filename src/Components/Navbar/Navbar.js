@@ -17,10 +17,13 @@ function Navbar() {
 			</Hamburger>
 			<Menu isOpen={isOpen}>
 				<MenuLink>
+					<Link to="/skills">Skills</Link>
+				</MenuLink>
+				<MenuLink>
 					<Link to="/projects">Projects</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link to="/tools">Tool-Kit</Link>
+					<Link to="/tools">Tools</Link>
 				</MenuLink>
 				<MenuLink>
 					<Link to="/contact">Contact</Link>
