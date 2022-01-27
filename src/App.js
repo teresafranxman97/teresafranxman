@@ -20,6 +20,7 @@ function App() {
 
 				<Routes>
 					<Route exact path="/teresafranxman" element={<LandingPage />} />
+					<Route path="/skills" element={<Skills />} />
 					<Route path="/projects" element={<Projects projects={projects} />} />
 					<Route path="/tools" element={<Tools />} />
 					<Route path="/contact" element={<Contact />} />
