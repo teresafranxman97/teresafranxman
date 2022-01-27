@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import ProjectsStyles from "../../Styles/Projects/ProjectsStyles";
+import ProjectsStyles from "../../Styles/ProjectsStyles/ProjectsStyles";
 
 const Projects = (props) => {
 	const { projects } = props;

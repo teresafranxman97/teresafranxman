@@ -20,7 +20,7 @@ const StyledTools = styled.div`
 
 	h1 {
         width: 50vw;
-        font-weight: normal;
+        font-weight: 300;
 	}
 
     .icon {

@@ -22,15 +22,16 @@ const Styled = styled.div`
 	}
 	
 	h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		height: 113px;
 		line-height: 300px;
-		font-weight: normal;
+		font-weight: 300;
 	}
 
 	p {
-		font-size: 5rem;
+		font-size: 4rem;
 		line-height: 70px;
+		font-weight: 600;
 	}
 	
 	a {
@@ -46,7 +47,7 @@ const Styled = styled.div`
 		}
 
 		p {
-			font-size: 3.2rem;	
+			font-size: 2.8rem;	
 		}
 	}
 
@@ -57,12 +58,11 @@ const Styled = styled.div`
 		}
 
 		h1 {
-			font-size: 1rem;
 			line-height: 250px;
 		}
 
 		p{
-			font-size: 2.5rem;
+			font-size: 2rem;
 			line-height: 40px;
 		}
 	}
@@ -75,8 +75,8 @@ const Button = styled.div `
 	background: black;
 	padding: 9px 3px;
 	text-align: center;
-	margin-left: 6rem;
-	margin-right: 6rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
 	border: 1px solid black;
 	border-radius: 30px;
 	

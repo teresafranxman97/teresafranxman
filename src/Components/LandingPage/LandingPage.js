@@ -11,10 +11,10 @@ function LandingPage() {
 			<div className="container">
 				<div className="content">
 					<h1>Hi, I am Teresa.</h1>
-					<p>Front End Developer <br/> & <br/> Designer </p>
+					<p>Front End Developer <br/> & <br/> UI/UX Designer </p>
 					<Button>
 						<Link to="/projects">
-							My projects
+							Projects
 						</Link>
 					</Button>
 				</div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "./Components/landingPage/LandingPage";
-import Projects from "./Components/projects/Projects";
+import Projects from "./Components/Projects/Projects";
 import Tools from "./Components/Tools/Tools";
 import Contact from "./Components/contact/Contact";
 import Navbar from "./Components/navbar/Navbar";
