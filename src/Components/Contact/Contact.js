@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
+import { ContactStyles, Container, ContentContainer, Footer } from '../../Styles/Contact/ContactStyles';
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -43,8 +44,11 @@ function Contact() {
 	};
 
 	return (
-		<div>
-			<div className="form-container">
+		<ContactStyles>
+			<ContentContainer>
+				<p> I would love to hear from you! <br/> Send me a message or connect with me online! </p>
+			</ContentContainer>
+			<Container className="form-container">
 				<form onSubmit={onSubmit}>
                     <label>Name</label>
 					<input
@@ -76,8 +80,11 @@ function Contact() {
 						<button type="submit">Submit</button>
 					</div>
 				</form>
-			</div>
-		</div>
+			</Container>
+			<Footer>
+				@ Teresa Franxman 2022
+			</Footer>
+		</ContactStyles>
 	);
 }
 
