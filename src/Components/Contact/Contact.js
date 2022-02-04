@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
-import { ContactStyles, Container, ContentContainer, Footer } from '../../Styles/Contact/ContactStyles';
+import { ContactStyles, Container, ContentContainer, Icons, Label ,Footer } from '../../Styles/Contact/ContactStyles';
+import { Icon } from "@iconify/react";
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -46,36 +47,43 @@ function Contact() {
 	return (
 		<ContactStyles>
 			<ContentContainer>
-				<p> I would love to hear from you! <br/> Send me a message or connect with me online! </p>
+				<p> I would love to hear from you! <br/> Send me a message or connect with me online. </p>
+				<Icons>
+					<Icon className="icon" icon="codicon:github-alt" width={20} />
+					<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
+				</Icons>
 			</ContentContainer>
 			<Container className="form-container">
 				<form onSubmit={onSubmit}>
-                    <label>Name</label>
-					<input
-						required
-						type="text"
-						name="user_name"
-						placeholder="NAME"
-						value={toSend.user_name}
-						onChange={handleChange}
-					/>
-                    <label>Email</label>
-					<input
-						required
-						type="text"
-						name="user_email"
-						placeholder="EMAIL"
-						value={toSend.user_email}
-						onChange={handleChange}
-					/>
-                    <label>Message</label>
-					<textarea
-                        required
-                        name="message"
-                        value={toSend.message}
-                        onChange={handleChange}
-                    ></textarea>
-
+					<Label>
+						<input
+							required
+							type="text"
+							name="user_name"
+							placeholder="NAME"
+							value={toSend.user_name}
+							onChange={handleChange}
+						/>
+					</Label>
+					<Label>
+						<input
+							required
+							type="text"
+							name="user_email"
+							placeholder="EMAIL"
+							value={toSend.user_email}
+							onChange={handleChange}
+						/>
+					</Label>
+					<div className="textarea"> 
+						<label>Message</label>
+						<textarea
+							required
+							name="message"
+							value={toSend.message}
+							onChange={handleChange}
+						></textarea>
+					</div>
 					<div className="button-container">
 						<button type="submit">Submit</button>
 					</div>

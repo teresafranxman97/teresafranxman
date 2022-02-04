@@ -1,26 +1,84 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Styled = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	height: 100vh;
-
-	.container {
-		text-align: center;
-		margin-top: 4vh;
-	}
-
-	.icons-content {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		bottom: 0;
-		position: fixed;
-		width: 100%;
+	
+	a {
+		text-decoration: none;
 	}
 	
+`;
+
+const Button = styled.div `
+	background: transparent;
+	width: 15rem;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	border: 3px solid #F5487F;
+	border-radius: 5px;
+	cursor: pointer;
+
+	:hover {
+		background: #1F306E;
+		transition: 0.3s;
+		border: 3px solid #1F306E;
+	}
+
+	a {
+		color: #FFF9F5;
+		font-size: 20px;
+		
+	}
+	
+
+	@media (max-width: 768px) {
+		margin-bottom: 1rem;
+
+		a {
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		padding: 6px 3px;
+		margin-bottom: 1rem;
+
+		a {
+			font-size: 15px;
+		}
+	}
+
+	${props => props.primary && css`
+		background: #F5487F;
+		color: #FFFFFF;
+	`}
+`
+
+const ButtonContainer = styled.div`
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: space-between;
+	width: 32rem;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		width: auto;
+	}
+
+	@media (max-width: 480px) {
+	}
+`
+
+const Container = styled.div`
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	text-align: center;
+	padding-top: 3rem;
+`
+
+const Content = styled.div`
 	h1 {
 		font-size: 1.5rem;
 		height: 113px;
@@ -33,62 +91,52 @@ const Styled = styled.div`
 		line-height: 70px;
 		font-weight: 600;
 	}
-	
-	a {
-		text-decoration: none;
-	}
-
-	
-
 
 	@media (max-width: 768px) {
-		.container {
-			width: 100vw;
-		}
-
 		p {
 			font-size: 2.8rem;	
 		}
 	}
 
 	@media (max-width: 480px) {
-		.container {
-			width: 100vw;
-			margin-top: 7vh;
-		}
-
 		h1 {
 			line-height: 250px;
+			font-size: 1rem;
 		}
 
-		p{
-			font-size: 2rem;
+		p {
+			font-size: 1.8rem;
 			line-height: 40px;
 		}
 	}
-	
+`
 
-	
-`;
+const IconsContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
 
-const Button = styled.div `
-	background: black;
-	padding: 9px 3px;
-	text-align: center;
-	margin-left: 10rem;
-	margin-right: 10rem;
-	border: 1px solid black;
-	border-radius: 30px;
-	
-	a {
-		color: #FFF9F5;
-		font-size: 25px;
+	.left-icons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
 	}
 
-	@media (max-width: 480px) {
-		margin-left: 4rem;
-		margin-right: 4rem;
+    .icon {
+        padding: .5em;
+        color: #F5487F;
+    }
+
+	
+    @media (max-width: 768px) {
+		
 	}
 `
 
-export { Styled, Button };
+export { Styled, Button, ButtonContainer, Container, IconsContainer, Content };

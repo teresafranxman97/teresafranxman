@@ -7,7 +7,7 @@ const Projects = (props) => {
 	const { projects } = props;
 
 	return (
-		<ProjectsStyles className="projects-container">
+		<ProjectsStyles>
 			<h1>Projects</h1>
 				<div className="outer-box"></div>
 				<div className="project-container">

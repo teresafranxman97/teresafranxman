@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: ${({ isOpen }) => (isOpen ? "#FFE3D1" : "#F8F5F5")};
+	background: ${({ isOpen }) => (isOpen ? "#FFE3D1" : "#ffffff14")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -13,7 +13,7 @@ const NavStyles = styled.div`
 	
 	
 	a {
-		color: black;
+		color: #FFFFFF;
 		margin-left: 1vw;
 		text-decoration: none;
 	}
@@ -27,7 +27,7 @@ const Hamburger = styled.div `
 	span {
 		height: 2px;
 		width: 25px;
-		background: black;
+		background: #FFFFFF;
 		margin-bottom: 4px;
 		border-radius: 5px;
 	}
@@ -55,7 +55,7 @@ const Menu = styled.div `
 `
 
 const MenuLink = styled.div `
-	padding: 1rem 2rem;
+	padding: 1rem;
 	cursor: pointer;
 	text-align: center;
 	transition: all 0.3s ease-in;
@@ -69,6 +69,8 @@ const Logo = styled.div `
 	padding: 1rem 0;
 	font-weight: 800;
 	font-size: 2rem;
+
+	
 `
 
 
