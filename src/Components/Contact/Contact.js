@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
-import { ContactStyles, Container, ContentContainer, Icons, Label ,Footer } from '../../Styles/Contact/ContactStyles';
+import {
+	ContactStyles,
+	Container,
+	Icons,
+	IconContainer,
+	ButtonContainer,
+	Label,
+	Footer
+} from '../../Styles/Contact/ContactStyles';
 import { Icon } from "@iconify/react";
+import gradient from '../../images/blurry-gradient-haikei.svg';
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -45,15 +54,16 @@ function Contact() {
 	};
 
 	return (
-		<ContactStyles>
-			<ContentContainer>
-				<p> I would love to hear from you! <br/> Send me a message or connect with me online. </p>
-				<Icons>
-					<Icon className="icon" icon="codicon:github-alt" width={20} />
-					<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
-				</Icons>
-			</ContentContainer>
-			<Container className="form-container">
+		<ContactStyles
+			style={{
+				backgroundImage: `url(${gradient})`,
+				backgroundSize: "cover",
+				backgroundPosition: "right",
+				height: "100vh"
+			}}
+		>
+			<Container>
+				<h1>Contact me</h1>
 				<form onSubmit={onSubmit}>
 					<Label>
 						<input
@@ -76,19 +86,33 @@ function Contact() {
 						/>
 					</Label>
 					<div className="textarea"> 
-						<label>Message</label>
 						<textarea
 							required
 							name="message"
+							placeholder="MESSAGE"
 							value={toSend.message}
 							onChange={handleChange}
 						></textarea>
 					</div>
-					<div className="button-container">
+					<ButtonContainer>
 						<button type="submit">Submit</button>
-					</div>
+					</ButtonContainer>
 				</form>
 			</Container>
+			<Icons>
+				<IconContainer>
+					<Icon className="icon" icon="fontisto:email" width={20} />
+					<p> tereafranxman97@gmail.com </p>
+				</IconContainer>
+				<IconContainer>
+					<Icon className="icon" icon="akar-icons:location" width={20} />
+					<p> Minnesota, U.S.A. </p>
+				</IconContainer>
+				<IconContainer>
+					<Icon className="icon" icon="bi:phone" width={20} />
+					<p>507.686.0322</p>
+				</IconContainer>
+			</Icons>
 			<Footer>
 				@ Teresa Franxman 2022
 			</Footer>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: ${({ isOpen }) => (isOpen ? "#FFE3D1" : "#ffffff14")};
+	background: ${({ isOpen }) => (isOpen ? "#FFE3D1" : "#00122026")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -58,6 +58,7 @@ const MenuLink = styled.div `
 	padding: 1rem;
 	cursor: pointer;
 	text-align: center;
+	font-weight: 400;
 	transition: all 0.3s ease-in;
 	
 	&:hover {
@@ -70,6 +71,7 @@ const Logo = styled.div `
 	font-weight: 800;
 	font-size: 2rem;
 
+	
 	
 `
 

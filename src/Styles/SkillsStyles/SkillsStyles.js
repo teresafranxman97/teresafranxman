@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const Container = styled.div`
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
+    padding-top: 10vh;
 `
 
 const Content = styled.div`
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid lightgrey;
 `

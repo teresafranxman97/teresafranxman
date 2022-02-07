@@ -4,7 +4,7 @@ import { Container, Content, ContentContainer } from '../../Styles/SkillsStyles/
 const Skills = () => {
     return (
         <Container>
-            <h1>What I do</h1>
+            <p>Skilled in design, development and deployment of web applications.</p>
             <ContentContainer className="container">
                 <Content className="content">
                     <h1>Design</h1>

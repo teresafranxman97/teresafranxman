@@ -18,8 +18,7 @@ function LandingPage() {
 			style= {{
 				backgroundImage: `url(${gradient})`,
 				backgroundSize: "cover",
-				height: "89vh",
-				borderBottomLeftRadius: "91vw",
+				height: "100vh",
 			}}
 		>
 			<Container >

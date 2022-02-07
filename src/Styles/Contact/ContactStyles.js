@@ -1,51 +1,35 @@
 import styled from "styled-components";
 
 const ContactStyles = styled.div`
-    padding-top: 3vh;
+    padding-top: 5rem;
 
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+    }
 `
 
-
 const Container = styled.div`
+    padding: 1rem;
+
     form {
-        background: #A7FFF0;
-        height: 50vh;
+        background: transparent;
     }
 
     .textarea {
-        margin: 1em;
         display: flex;
         flex-direction: column;
+        border: 2px solid #FFFFFF;
+    }
 
-        label {
-            border-bottom: 3px solid black;
-            margin-bottom: .5em;
+    textarea {
+        background: transparent;
+
+        ::placeholder {
+            color: #FFFFFF;
         }
     }
-
-    .button-container {
-        margin: 1em;
-        display: block;
-        float:
-
-        button {
-            background: black;
-            border-radius: 20px;
-            color: #F8F5F5;
-            width: 50%;
-            border: none;
-            padding: 10px;
-            font-weight: normal;
-        }
-    }
-    
-    @media(max-width: 480px) {
-        padding: 1rem;
-    }
-`
-
-const ContentContainer = styled.div`
-    text-align: center;
 `
 
 const Footer = styled.div`
@@ -60,17 +44,66 @@ const Footer = styled.div`
 `
 
 const Label = styled.div`
-    border-bottom: 3px solid black;
-    margin: 1em;
+    border: 3px solid #FFFFFF;
+    margin-bottom: 1rem;
     
     input[type=text] {
         border: none;
         background: transparent;
+        color: #FFFFFF;
+        
+        ::placeholder {
+            color: #FFFFFF;
+        }
     }
+
 `
 
 const Icons = styled.div`
     flex-direction: row;
+    padding: 1rem;
 `
 
-export { ContactStyles, Container, ContentContainer, Footer, Label, Icons}
+const IconContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    p {
+        margin-left: 1rem;
+    }
+`
+
+const ButtonContainer = styled.div`
+    margin-top: 1rem;
+
+    button {
+        background: transparent;
+        color: #FFFFFF;
+        width: 15rem;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-align: center;
+        border: 3px solid #FFFFFF;
+        border-radius: 5px;
+        cursor: pointer;
+
+        :hover {
+            background: #1F306E;
+            transition: 0.3s;
+            border: 3px solid #1F306E;
+        }
+    }
+    
+
+    @media (max-width: 768px) {
+
+    }
+
+    @media (max-width: 480px) {
+      
+    }
+`
+
+export { ContactStyles, Container, Footer, Label, Icons, IconContainer, ButtonContainer}

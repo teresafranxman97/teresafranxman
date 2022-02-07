@@ -12,17 +12,16 @@ const Styled = styled.div`
 const Button = styled.div `
 	background: transparent;
 	width: 15rem;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
-	border: 3px solid #F5487F;
+	border: 1px solid #ED71AD;
 	border-radius: 5px;
 	cursor: pointer;
 
 	:hover {
-		background: #1F306E;
+		background: #FBAE3C;
 		transition: 0.3s;
-		border: 3px solid #1F306E;
 	}
 
 	a {
@@ -50,7 +49,7 @@ const Button = styled.div `
 	}
 
 	${props => props.primary && css`
-		background: #F5487F;
+		background: #ED71AD;
 		color: #FFFFFF;
 	`}
 `
@@ -76,6 +75,8 @@ const Container = styled.div`
 	align-items: center;
 	text-align: center;
 	padding-top: 3rem;
+
+	
 `
 
 const Content = styled.div`
@@ -130,7 +131,7 @@ const IconsContainer = styled.div`
 
     .icon {
         padding: .5em;
-        color: #F5487F;
+        color: #FFFFFF;
     }
 
 	
