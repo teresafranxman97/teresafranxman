@@ -1,35 +1,83 @@
 import styled, { css } from "styled-components";
 
 const Styled = styled.div`
-	height: 100vh;
-	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-top: 15rem;
+
 	a {
 		text-decoration: none;
 	}
-	
+
+	@media (max-width: 1024px) {
+		grid-template-columns: repeat(1, 1fr);
+		padding-top: 8rem;
+	}
 `;
 
+
+const Container = styled.div`
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	padding-right: 2rem;
+
+	@media (max-width: 1024px) {
+		padding: 2rem;
+	}
+`
+
+const Content = styled.div`
+	h1 {
+		font-size: 1rem;
+		font-weight: 300;
+		height: 1px;
+	}
+
+	p {
+		font-size: 3rem;	
+		font-weight: 600;
+		line-height: 60px;
+	}
+
+	@media (max-width: 1024px) {
+		text-align: center;
+
+		p {
+			font-size: 2rem;
+			line-height: 35px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		p {
+			font-size: 1.5rem;
+		}
+	}
+`
 const Button = styled.div `
 	background: transparent;
 	width: 15rem;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align: center;
-	border: 1px solid #ED71AD;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #B2FF00;
 	border-radius: 5px;
 	cursor: pointer;
 
 	:hover {
-		background: #FBAE3C;
+		background: #B2FF00;
 		transition: 0.3s;
+		
+		a {
+			color: #15161C;
+		}
 	}
 
 	a {
 		color: #FFF9F5;
-		font-size: 20px;
-		
+		font-size: 20px;	
 	}
-	
 
 	@media (max-width: 768px) {
 		margin-bottom: 1rem;
@@ -40,74 +88,58 @@ const Button = styled.div `
 	}
 
 	@media (max-width: 480px) {
-		padding: 6px 3px;
-		margin-bottom: 1rem;
-
 		a {
 			font-size: 15px;
 		}
 	}
 
 	${props => props.primary && css`
-		background: #ED71AD;
-		color: #FFFFFF;
+		background: #FF00B2;
+		border: none;
 	`}
 `
 
 const ButtonContainer = styled.div`
-	display: flex;
-	flex-direction: row nowrap;
-	justify-content: space-between;
-	width: 32rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: .5rem;
+	justify-self: start;
 
-	@media (max-width: 768px) {
-		flex-direction: column;
-		width: auto;
-	}
-
-	@media (max-width: 480px) {
+	@media (max-width: 1024px) {
+		grid-template-columns: repeat(1, 1fr);
+		justify-self: center;
 	}
 `
 
-const Container = styled.div`
+const MidContent = styled.div`
 	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	text-align: center;
-	padding-top: 3rem;
+	justify-content: center;
 
+	.circle {
+		background: #B2FF00;
+		width: 20rem;
+		height: 20rem;
+		bottom: 56px;	
+		position: relative;
+		border-radius: 100%;
+	}
 	
-`
-
-const Content = styled.div`
-	h1 {
-		font-size: 1.5rem;
-		height: 113px;
-		line-height: 300px;
-		font-weight: 300;
+	img {
+		position: absolute;
 	}
+	
+	@media (max-width: 1024px) {
+		justify-content: center;
+		height: 32vh;
 
-	p {
-		font-size: 4rem;
-		line-height: 70px;
-		font-weight: 600;
-	}
-
-	@media (max-width: 768px) {
-		p {
-			font-size: 2.8rem;	
-		}
-	}
-
-	@media (max-width: 480px) {
-		h1 {
-			line-height: 250px;
-			font-size: 1rem;
+		.circle {
+			width: 15rem;
+			height: 15rem;
+			bottom: 20px;
 		}
 
-		p {
-			font-size: 1.8rem;
-			line-height: 40px;
+		img {
+			height: 300px;
 		}
 	}
 `
@@ -115,29 +147,17 @@ const Content = styled.div`
 const IconsContainer = styled.div`
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	bottom: 0;
-	position: fixed;
-	width: 100%;
-
-	.left-icons {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-	}
+	padding-top: 2rem;
 
     .icon {
         padding: .5em;
-        color: #FFFFFF;
+        color: #B2FF00;	
     }
 
-	
-    @media (max-width: 768px) {
-		
+    @media (max-width: 1024px) {
+		justify-content: center;
+		width: 100%;
 	}
 `
 
-export { Styled, Button, ButtonContainer, Container, IconsContainer, Content };
+export { Styled, Button, ButtonContainer, Container,MidContent, IconsContainer, Content };

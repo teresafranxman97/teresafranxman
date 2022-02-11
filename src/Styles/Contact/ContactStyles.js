@@ -25,6 +25,7 @@ const Container = styled.div`
 
     textarea {
         background: transparent;
+        color: white;
 
         ::placeholder {
             color: #FFFFFF;
@@ -96,14 +97,6 @@ const ButtonContainer = styled.div`
         }
     }
     
-
-    @media (max-width: 768px) {
-
-    }
-
-    @media (max-width: 480px) {
-      
-    }
 `
 
 export { ContactStyles, Container, Footer, Label, Icons, IconContainer, ButtonContainer}

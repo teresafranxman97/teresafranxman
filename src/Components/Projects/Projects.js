@@ -9,7 +9,7 @@ const Projects = (props) => {
 	return (
 		<ProjectsStyles>
 			<h1>Projects</h1>
-				<div className="outer-box"></div>
+				{/* <div className="outer-box"></div> */}
 				<div className="project-container">
 					{projects.map((project) => (
 						<div className="project-content" key={project.id}>

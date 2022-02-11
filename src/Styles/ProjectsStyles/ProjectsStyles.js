@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const ProjectsStyles = styled.div`
 	padding: 2em;
-	color: #15161C;
 
 	.outer-box {
 		padding: 12em 14em;
