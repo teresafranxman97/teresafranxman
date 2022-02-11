@@ -13,11 +13,11 @@ const Projects = (props) => {
 				<div className="project-container">
 					{projects.map((project) => (
 						<div className="project-content" key={project.id}>
-							<img src={project.src} alt="google-clone" />
+							<img src={project.src} alt="" />
 							<h2>{project.title}</h2>
 							<h3>{project.position}</h3>
 							<p>{project.description}</p>
-							<a href={project.link}>
+							<a href={project.href} >
 								{" "}
 								View <Icon icon="akar-icons:arrow-right" />{" "}
 							</a>
