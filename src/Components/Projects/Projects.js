@@ -17,10 +17,10 @@ const Projects = (props) => {
 							<h2>{project.title}</h2>
 							<h3>{project.position}</h3>
 							<p>{project.description}</p>
-							<Link to="">
+							<a href={project.link}>
 								{" "}
 								View <Icon icon="akar-icons:arrow-right" />{" "}
-							</Link>
+							</a>
 						</div>
 					))}
 				</div>
