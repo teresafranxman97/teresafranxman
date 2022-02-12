@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const Container = styled.div`
     display: flex;
@@ -7,7 +8,7 @@ const Container = styled.div`
     padding-top: 10vh;
 `
 
-const Content = styled.div`
+const Content = styled(motion.div) `
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +17,10 @@ const Content = styled.div`
 
 const ContentContainer = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
 `
 
 export { Container, Content, ContentContainer }

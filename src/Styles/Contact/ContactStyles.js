@@ -40,8 +40,7 @@ const Footer = styled.div`
     width: 100vw;
     font-size: .5rem;
     font-weight: 100;
-    color: #F8F5F5;
-    background: #15161C;
+    background: transparent;
 `
 
 const Label = styled.div`

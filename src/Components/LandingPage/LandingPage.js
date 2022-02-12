@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from 'framer-motion/dist/framer-motion';
 import { Link } from "react-router-dom";
 import {
 	Styled,
@@ -23,16 +24,25 @@ function LandingPage() {
 			<Container >
 				<Content>
 					<h1>Hi, I am Teresa <Icon icon="mdi:hand-wave-outline" /> </h1>
-					<p>Front End Developer creating exceptional user experiences on the web</p>
+ 					<p>Front End Developer creating exceptional user experiences on the web</p>
 				</Content>
 				<ButtonContainer>
-					<Button>
+					<Button
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						className="projects-button"
+						onClick={() => null}
+					>
 						<Link to="/projects">
 							Projects
 						</Link>
 					</Button>
 					<Button
 						primary
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						className="projects-button"
+						onClick={() => null}
 					>
 						<Link to="/contact">Contact me</Link>
 					</Button>

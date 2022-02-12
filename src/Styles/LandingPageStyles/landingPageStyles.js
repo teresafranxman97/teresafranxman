@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Styled = styled.div`
 	display: grid;
@@ -54,13 +55,10 @@ const Content = styled.div`
 		}
 	}
 `
-const Button = styled.div `
+const Button = styled(motion.div) `
 	background: transparent;
 	width: 15rem;
 	height: 3rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border: 1px solid #B2FF00;
 	border-radius: 5px;
 	cursor: pointer;
@@ -76,7 +74,10 @@ const Button = styled.div `
 
 	a {
 		color: #FFF9F5;
-		font-size: 20px;	
+		font-size: 20px;
+		text-align: center;
+		display: block;
+		margin-top: .5rem;	
 	}
 
 	@media (max-width: 768px) {
@@ -151,7 +152,7 @@ const IconsContainer = styled.div`
 
     .icon {
         padding: .5em;
-        color: #B2FF00;	
+        color:  #FF00B2;
     }
 
     @media (max-width: 1024px) {
