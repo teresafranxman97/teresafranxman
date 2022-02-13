@@ -2,66 +2,66 @@ import styled, { css } from "styled-components";
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Styled = styled.div`
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	padding-top: 15rem;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+	padding-left: 2rem;
+    padding-right: 2rem;
+	justify-content: center;
 
 	a {
 		text-decoration: none;
 	}
 
-	@media (max-width: 1024px) {
-		grid-template-columns: repeat(1, 1fr);
-		padding-top: 8rem;
+	@media (min-width: 1024px) {
+		flex-direction: row-reverse;
+		padding-left: 5rem;
 	}
 `;
 
 
 const Container = styled.div`
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	padding-right: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 
-	@media (max-width: 1024px) {
-		padding: 2rem;
+	@media (min-width: 1024px) {
+		width: 50vw;
 	}
 `
 
 const Content = styled.div`
+	text-align: center;
+	
 	h1 {
-		font-size: 1rem;
-		font-weight: 300;
+		font-size: 15px;
+		font-weight: 600;
 		height: 1px;
 	}
 
 	p {
-		font-size: 3rem;	
-		font-weight: 600;
-		line-height: 60px;
+		font-size: 20px;	
+		font-weight: 300;
 	}
 
-	@media (max-width: 1024px) {
-		text-align: center;
-
-		p {
-			font-size: 2rem;
-			line-height: 35px;
-		}
+	@media (min-width: 1024px) {
+		text-align: left;
 	}
 
-	@media (max-width: 480px) {
-		p {
-			font-size: 1.5rem;
+	@media (min-width: 768px) {
+		p{
+			font-size: 30px;
 		}
 	}
 `
 const Button = styled(motion.div) `
 	background: transparent;
-	width: 15rem;
-	height: 3rem;
+	width: 100%;
 	border: 1px solid #B2FF00;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-right: 1rem;
 
 	:hover {
 		background: #B2FF00;
@@ -77,21 +77,19 @@ const Button = styled(motion.div) `
 		font-size: 20px;
 		text-align: center;
 		display: block;
-		margin-top: .5rem;	
+		margin: 8px;	
 	}
 
-	@media (max-width: 768px) {
+	@media (min-width:  480px) {
+		width: 20rem;
+
+		a {
+			font-size: 20px;
+		}
+	}
+
+	@media (min-width: 280px) {
 		margin-bottom: 1rem;
-
-		a {
-			font-size: 18px;
-		}
-	}
-
-	@media (max-width: 480px) {
-		a {
-			font-size: 15px;
-		}
 	}
 
 	${props => props.primary && css`
@@ -101,46 +99,45 @@ const Button = styled(motion.div) `
 `
 
 const ButtonContainer = styled.div`
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: .5rem;
-	justify-self: start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-	@media (max-width: 1024px) {
-		grid-template-columns: repeat(1, 1fr);
-		justify-self: center;
+	@media (min-width: 1024px) {
+		flex-direction: row;
 	}
 `
 
 const MidContent = styled.div`
 	display: flex;
 	justify-content: center;
+	width: 100%;
 
 	.circle {
 		background: #B2FF00;
-		width: 20rem;
-		height: 20rem;
-		bottom: 56px;	
+		width: 13rem;
+		height: 13rem;	
+		bottom: 30px;
 		position: relative;
 		border-radius: 100%;
 	}
 	
 	img {
 		position: absolute;
+		height: 25%;
 	}
 	
-	@media (max-width: 1024px) {
-		justify-content: center;
-		height: 32vh;
-
+	@media (min-width: 1024px) {
+		width: 50vw;
+		
 		.circle {
-			width: 15rem;
-			height: 15rem;
-			bottom: 20px;
+			width: 25rem;
+			height: 25rem;	
+			bottom: 5rem;
 		}
 
 		img {
-			height: 300px;
+			height: 45%;
 		}
 	}
 `
@@ -152,7 +149,7 @@ const IconsContainer = styled.div`
 
     .icon {
         padding: .5em;
-        color:  #FF00B2;
+        color:  #B2FF00;
     }
 
     @media (max-width: 1024px) {

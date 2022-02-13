@@ -31,7 +31,7 @@ const Hamburger = styled.div `
 		border-radius: 5px;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		display: flex;
 	}
 `
@@ -42,7 +42,7 @@ const Menu = styled.div `
 	align-items: right;
 	position: relative;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		overflow: hidden;
 		flex-direction: column;
 		max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};

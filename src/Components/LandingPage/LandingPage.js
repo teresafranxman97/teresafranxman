@@ -48,9 +48,12 @@ function LandingPage() {
 					</Button>
 				</ButtonContainer>
 				<IconsContainer >
+					<a href="https://github.com/teresafranxman97">
 						<Icon className="icon" icon="codicon:github-alt" width={25} />
+					</a>
+					<a href="https://linkedin.com/in/teresa-franxman">
 						<Icon className="icon" icon="akar-icons:linkedin-fill" width={25} />
-
+					</a>
 				</IconsContainer>
 			</Container>
 		</Styled>
