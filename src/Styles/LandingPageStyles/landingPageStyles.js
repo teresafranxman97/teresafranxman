@@ -35,25 +35,20 @@ const Content = styled.div`
 	text-align: center;
 	
 	h1 {
-		font-size: 15px;
+		font-size: clamp(1rem,1.2vw,3.5rem);
 		font-weight: 600;
 		height: 1px;
 	}
 
-	p {
-		font-size: 20px;	
+	p {	
 		font-weight: 300;
+		font-size: clamp(1.2rem, 2.85vw, 4rem); 
 	}
 
 	@media (min-width: 1024px) {
 		text-align: left;
 	}
 
-	@media (min-width: 768px) {
-		p{
-			font-size: 30px;
-		}
-	}
 `
 const Button = styled(motion.div) `
 	background: transparent;
@@ -74,7 +69,7 @@ const Button = styled(motion.div) `
 
 	a {
 		color: #FFF9F5;
-		font-size: 20px;
+		font-size: 18px;
 		text-align: center;
 		display: block;
 		margin: 8px;	
@@ -82,10 +77,6 @@ const Button = styled(motion.div) `
 
 	@media (min-width:  480px) {
 		width: 20rem;
-
-		a {
-			font-size: 20px;
-		}
 	}
 
 	@media (min-width: 280px) {
@@ -112,32 +103,38 @@ const MidContent = styled.div`
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	align-items: center;
+	height: 35vh;
 
 	.circle {
 		background: #B2FF00;
-		width: 13rem;
-		height: 13rem;	
-		bottom: 30px;
+		width: 12rem;
+		height: 12rem;
+		padding: .5rem;
 		position: relative;
 		border-radius: 100%;
 	}
 	
 	img {
 		position: absolute;
-		height: 25%;
+		height: 35%;
 	}
 	
 	@media (min-width: 1024px) {
 		width: 50vw;
 		
 		.circle {
-			width: 25rem;
-			height: 25rem;	
 			bottom: 5rem;
 		}
 
 		img {
 			height: 45%;
+		}
+	}
+
+	@media (min-width: 480px) {
+		.circle {
+			padding: 5vw;
 		}
 	}
 `
@@ -152,9 +149,9 @@ const IconsContainer = styled.div`
         color:  #B2FF00;
     }
 
-    @media (max-width: 1024px) {
-		justify-content: center;
+    @media (max-width: 1023px) {
 		width: 100%;
+		justify-content: center;
 	}
 `
 
