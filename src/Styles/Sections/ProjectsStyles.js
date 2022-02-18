@@ -3,13 +3,6 @@ import styled from "styled-components";
 const ProjectsStyles = styled.div`
 	padding: 2em;
 
-	.outer-box {
-		padding: 12em 14em;
-		left: 0;
-		background: #D1FFE3;
-		position: fixed;
-	}
-
 	.project-container {
 		display: flex;
 		flex-direction: row;
@@ -24,7 +17,7 @@ const ProjectsStyles = styled.div`
 
 		a {
 			text-decoration: none;
-			color: #15161C;
+			color: white;
 			font-weight: 800;
 		}
 	}

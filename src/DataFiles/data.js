@@ -1,4 +1,4 @@
-import clone from "./images/googleclone.png";
+import clone from "../images/googleclone.png";
 
 const data = [
 	{

@@ -5,7 +5,7 @@ const ContactStyles = styled.div`
 
     @media (min-width: 768px) {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-flow: row nowrap;
     }
 `
@@ -31,6 +31,13 @@ const Container = styled.div`
             color: #FFFFFF;
         }
     }
+
+    @media (min-width: 768px) {
+        width: 50vw;
+    }
+`
+const TextContainer = styled.div`
+    display: flex;
 `
 
 const Footer = styled.div`
@@ -62,6 +69,10 @@ const Label = styled.div`
 const Icons = styled.div`
     flex-direction: row;
     padding: 1rem;
+
+    @media (min-width: 768px) {
+        width: 50vw;
+    }
 `
 
 const IconContainer = styled.div`
@@ -98,4 +109,4 @@ const ButtonContainer = styled.div`
     
 `
 
-export { ContactStyles, Container, Footer, Label, Icons, IconContainer, ButtonContainer}
+export { ContactStyles, Container, Footer, Label, Icons, IconContainer, ButtonContainer, TextContainer}

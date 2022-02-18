@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import LandingPage from "./Components/landingPage/LandingPage";
-import Projects from "./Components/Projects/Projects";
-import Tools from "./Components/Tools/Tools";
-import Contact from "./Components/contact/Contact";
-import Navbar from "./Components/navbar/Navbar";
+import Landing from "./sections/Landing";
+import Projects from "./sections/Projects";
+import Tools from "./sections/Tools";
+import Contact from "./sections/Contact";
+import Navbar from "./Components/Navbar";
 import AppStyles from "./Styles/app-styles";
-import Repairs from "./Components/underRepairs/Repairs";
-import Skills from './Components/skills/Skills.js';
-import data from "./data";
+import Skills from './sections/Skills.js';
+import data from "./DataFiles/data";
 
 function App() {
 	const [projects] = useState(data);
@@ -19,7 +18,7 @@ function App() {
 				<Navbar />
 
 				<Routes>
-					<Route exact path="/teresafranxman" element={<LandingPage />} />
+					<Route exact path="/teresafranxman" element={<Landing />} />
 					<Route path="/skills" element={<Skills />} />
 					<Route path="/projects" element={<Projects projects={projects} />} />
 					<Route path="/tools" element={<Tools />} />

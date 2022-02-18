@@ -6,11 +6,12 @@ import {
 	Icons,
 	IconContainer,
 	ButtonContainer,
+	TextContainer,
 	Label,
 	Footer
-} from '../../Styles/Contact/ContactStyles';
+} from '../Styles/Sections/ContactStyles';
 import { Icon } from "@iconify/react";
-import gradient from '../../images/blurry-gradient-haikei.svg';
+import gradient from '../images/blurry-gradient-haikei.svg';
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -65,26 +66,28 @@ function Contact() {
 			<Container>
 				<h1>Contact me</h1>
 				<form onSubmit={onSubmit}>
-					<Label>
-						<input
-							required
-							type="text"
-							name="user_name"
-							placeholder="NAME"
-							value={toSend.user_name}
-							onChange={handleChange}
-						/>
-					</Label>
-					<Label>
-						<input
-							required
-							type="text"
-							name="user_email"
-							placeholder="EMAIL"
-							value={toSend.user_email}
-							onChange={handleChange}
-						/>
-					</Label>
+					<TextContainer className="text-inputs">
+						<Label>
+							<input
+								required
+								type="text"
+								name="user_name"
+								placeholder="NAME"
+								value={toSend.user_name}
+								onChange={handleChange}
+							/>
+						</Label>
+						<Label>
+							<input
+								required
+								type="text"
+								name="user_email"
+								placeholder="EMAIL"
+								value={toSend.user_email}
+								onChange={handleChange}
+							/>
+						</Label>
+					</TextContainer>
 					<div className="textarea"> 
 						<textarea
 							required

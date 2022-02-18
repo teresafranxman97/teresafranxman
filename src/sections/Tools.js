@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import data from "./tools-data";
+import data from "../DataFiles/tools-data";
 import { Icon } from "@iconify/react";
-import StyledTools from "../../Styles/Tools/toolsStyles";
+import StyledTools from "../Styles/Sections/toolsStyles";
 
 const Tools = () => {
 	const [skills] = useState(data);

@@ -6,8 +6,6 @@ const Styled = styled.div`
 	flex-direction: column;
 	height: 100vh;
 	align-items: center;
-	padding-left: 2rem;
-    padding-right: 2rem;
 	justify-content: center;
 
 	a {
@@ -16,7 +14,6 @@ const Styled = styled.div`
 
 	@media (min-width: 1024px) {
 		flex-direction: row-reverse;
-		padding-left: 5rem;
 	}
 `;
 
@@ -122,13 +119,15 @@ const MidContent = styled.div`
 	
 	@media (min-width: 1024px) {
 		width: 50vw;
+    	height: 60vh;
 		
 		.circle {
 			bottom: 5rem;
 		}
 
 		img {
-			height: 45%;
+			height: 50%;
+			top: 11rem;
 		}
 	}
 

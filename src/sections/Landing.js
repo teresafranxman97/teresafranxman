@@ -9,22 +9,22 @@ import {
 	IconsContainer, 
 	Content, 
 	MidContent
-} from "../../Styles/LandingPageStyles/landingPageStyles";
+} from "../Styles/Sections/landingPageStyles";
 import { Icon } from '@iconify/react';
-import image from '../../images/me.png';
+// import image from '../../images/me.png';
 
-function LandingPage() {
+function Landing() {
 
 	return (
 		<Styled>
-			<MidContent>
+			{/* <MidContent>
 				<div className="circle"></div>
 				<img src={image} />
-			</MidContent>
+			</MidContent> */}
 			<Container >
 				<Content>
-					<h1>Hi, I am Teresa <Icon icon="mdi:hand-wave-outline" /> </h1>
- 					<p>Front End Developer creating exceptional user experiences on the web</p>
+					<h1>Hi, I'm Teresa <Icon icon="mdi:hand-wave-outline" /> </h1>
+ 					<p>I am a Front End Developer currently focusing on building quality, user-centered interfaces for the web.</p>
 				</Content>
 				<ButtonContainer>
 					<Button
@@ -60,4 +60,4 @@ function LandingPage() {
 	);
 }
 
-export default LandingPage;
+export default Landing;
