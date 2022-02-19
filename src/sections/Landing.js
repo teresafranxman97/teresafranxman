@@ -1,26 +1,25 @@
 import React, { useState } from "react";
+import Services from "./Services";
+import Tools from "./Tools";
+import Projects from "./Projects";
+import About from "./About";
+import Contact from "./Contact";
 import { motion } from 'framer-motion/dist/framer-motion';
 import { Link } from "react-router-dom";
 import {
 	Styled,
-	Button,
-	ButtonContainer,
 	Container,
 	IconsContainer, 
 	Content, 
 	MidContent
 } from "../Styles/Sections/landingPageStyles";
+import { Button, ButtonContainer } from "../Styles/Components/ButtonStyles";
 import { Icon } from '@iconify/react';
-// import image from '../../images/me.png';
 
 function Landing() {
 
 	return (
 		<Styled>
-			{/* <MidContent>
-				<div className="circle"></div>
-				<img src={image} />
-			</MidContent> */}
 			<Container >
 				<Content>
 					<h1>Hi, I'm Teresa <Icon icon="mdi:hand-wave-outline" /> </h1>
@@ -56,6 +55,11 @@ function Landing() {
 					</a>
 				</IconsContainer>
 			</Container>
+			<Services />
+			<Tools />
+			<Projects />
+			<About />
+			<Contact />
 		</Styled>
 	);
 }

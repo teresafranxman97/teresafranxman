@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import ProjectsStyles from "../Styles/Sections/ProjectsStyles";
+import data from '../DataFiles/data';
 
-const Projects = (props) => {
-	const { projects } = props;
+const Projects = () => {
+	const [projects] = useState(data);
 
 	return (
 		<ProjectsStyles>

@@ -1,31 +1,18 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const Styled = styled.div`
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	align-items: center;
-	justify-content: center;
-
 	a {
 		text-decoration: none;
 	}
-
-	@media (min-width: 1024px) {
-		flex-direction: row-reverse;
-	}
 `;
-
 
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-
-	@media (min-width: 1024px) {
-		width: 50vw;
-	}
+	height: 100vh;
+	justify-content: center;
 `
 
 const Content = styled.div`
@@ -47,96 +34,6 @@ const Content = styled.div`
 	}
 
 `
-const Button = styled(motion.div) `
-	background: transparent;
-	width: 100%;
-	border: 1px solid #B2FF00;
-	border-radius: 5px;
-	cursor: pointer;
-	margin-right: 1rem;
-
-	:hover {
-		background: #B2FF00;
-		transition: 0.3s;
-		
-		a {
-			color: #15161C;
-		}
-	}
-
-	a {
-		color: #FFF9F5;
-		font-size: 18px;
-		text-align: center;
-		display: block;
-		margin: 8px;	
-	}
-
-	@media (min-width:  480px) {
-		width: 20rem;
-	}
-
-	@media (min-width: 280px) {
-		margin-bottom: 1rem;
-	}
-
-	${props => props.primary && css`
-		background: #FF00B2;
-		border: none;
-	`}
-`
-
-const ButtonContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	@media (min-width: 1024px) {
-		flex-direction: row;
-	}
-`
-
-const MidContent = styled.div`
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	align-items: center;
-	height: 35vh;
-
-	.circle {
-		background: #B2FF00;
-		width: 12rem;
-		height: 12rem;
-		padding: .5rem;
-		position: relative;
-		border-radius: 100%;
-	}
-	
-	img {
-		position: absolute;
-		height: 35%;
-	}
-	
-	@media (min-width: 1024px) {
-		width: 50vw;
-    	height: 60vh;
-		
-		.circle {
-			bottom: 5rem;
-		}
-
-		img {
-			height: 50%;
-			top: 11rem;
-		}
-	}
-
-	@media (min-width: 480px) {
-		.circle {
-			padding: 5vw;
-		}
-	}
-`
 
 const IconsContainer = styled.div`
 	display: flex;
@@ -154,4 +51,4 @@ const IconsContainer = styled.div`
 	}
 `
 
-export { Styled, Button, ButtonContainer, Container,MidContent, IconsContainer, Content };
+export { Styled, Container, IconsContainer, Content };

@@ -6,10 +6,10 @@ const NavStyles = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	position: ${({ isOpen }) => (isOpen ? "" : "absolute" )};
+	position: fixed;
 	top: 0;
-	left: 10px;
-    right: 10px;
+	left: 0;
+    right: 0;
 	
 	a {
 		color: #FFFFFF;
@@ -48,7 +48,6 @@ const Menu = styled.div `
 		max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
 		transition: max-height 0.3s ease-in;
 		min-width: 100vw;
-		
 	}
 
 `

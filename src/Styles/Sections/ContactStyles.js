@@ -2,12 +2,9 @@ import styled from "styled-components";
 
 const ContactStyles = styled.div`
     padding-top: 5rem;
-
-    @media (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row nowrap;
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 `
 
 const Container = styled.div`
@@ -41,7 +38,7 @@ const TextContainer = styled.div`
 `
 
 const Footer = styled.div`
-    position: fixed;
+    position: inherit;
     bottom: 0;
     text-align: center;
     width: 100vw;
