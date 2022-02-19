@@ -5,13 +5,13 @@ import {
 	Container,
 	Icons,
 	IconContainer,
-	ButtonContainer,
 	TextContainer,
 	Label,
 	Footer
 } from '../Styles/Sections/ContactStyles';
 import { Icon } from "@iconify/react";
 import gradient from '../images/blurry-gradient-haikei.svg';
+import { ButtonContainer } from '../Styles/Components/ButtonStyles';
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -56,12 +56,12 @@ function Contact() {
 
 	return (
 		<ContactStyles
-			style={{
-				backgroundImage: `url(${gradient})`,
-				backgroundSize: "cover",
-				backgroundPosition: "right",
-				height: "100vh"
-			}}
+			// style={{
+			// 	backgroundImage: `url(${gradient})`,
+			// 	backgroundSize: "cover",
+			// 	backgroundPosition: "right",
+			// 	height: "100vh"
+			// }}
 		>
 			<Container>
 				<h1>Contact me</h1>

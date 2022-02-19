@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./sections/Landing";
 import Projects from "./sections/Projects";

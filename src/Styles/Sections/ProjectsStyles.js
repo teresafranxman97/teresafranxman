@@ -8,7 +8,6 @@ const ProjectsStyles = styled.div`
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		position: relative;
 	}
 
 	.project-content {

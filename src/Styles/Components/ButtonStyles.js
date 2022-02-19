@@ -1,29 +1,26 @@
 import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion/dist/framer-motion';
 
-const Button = styled(motion.div) `
-	background: transparent;
+const ButtonStyles = styled(motion.div) `
+	background: ${props => props.primary ? "#D6ABBE" : "transparent"};
 	width: 100%;
-	border: 1px solid #B2FF00;
+	border: 1px solid ${props => props.theme.main};
 	border-radius: 5px;
 	cursor: pointer;
 	margin-right: 1rem;
 
 	:hover {
-		background: #B2FF00;
+		background: ${props => props.theme.main};
 		transition: 0.3s;
-		
-		a {
-			color: #15161C;
-		}
 	}
 
 	a {
-		color: #FFF9F5;
+		color: #FFFFFF;
 		font-size: 18px;
 		text-align: center;
 		display: block;
 		margin: 8px;	
+		font-weight: 300;
 	}
 
 	@media (min-width:  480px) {
@@ -33,12 +30,14 @@ const Button = styled(motion.div) `
 	@media (min-width: 280px) {
 		margin-bottom: 1rem;
 	}
-
-	${props => props.primary && css`
-		background: #FF00B2;
-		border: none;
-	`}
 `
+
+ButtonStyles.defaultProps = {
+	theme: {
+		main: "#D6ABBE"
+	}
+}
+
 
 const ButtonContainer = styled.div`
 	display: flex;
@@ -50,4 +49,4 @@ const ButtonContainer = styled.div`
 	}
 `
 
-export { Button, ButtonContainer };
+export { ButtonStyles, ButtonContainer };

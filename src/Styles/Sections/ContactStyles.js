@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
 const ContactStyles = styled.div`
-    padding-top: 5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 `
 
 const Container = styled.div`
-    padding: 1rem;
-
     form {
         background: transparent;
     }

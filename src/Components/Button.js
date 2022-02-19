@@ -1,11 +1,18 @@
 import React from "react";
-import { Button, ButtonContainer } from "../Styles/Sections/landingPageStyles";
+import { ButtonStyles } from "../Styles/Components/ButtonStyles";
+import { Link } from 'react-router-dom';
 
-const Button = ({ content }) => {
+const Button = ({ content, link, primary = false }) => {
     return (
-        <Button>
-            { content }
-        </Button>
+        <ButtonStyles
+            primary={primary}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="projects-button"
+            onClick={() => null}
+        >
+          <Link to={link}>{content}</Link>
+        </ButtonStyles>
     )
 }
 

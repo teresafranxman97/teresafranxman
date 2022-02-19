@@ -10,7 +10,6 @@ const Styled = styled.div`
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	height: 100vh;
 	justify-content: center;
 `
@@ -19,18 +18,22 @@ const Content = styled.div`
 	text-align: center;
 	
 	h1 {
-		font-size: clamp(1rem,1.2vw,3.5rem);
+		font-size: clamp(1rem, 1.2vw, 4rem);
 		font-weight: 600;
 		height: 1px;
 	}
 
 	p {	
 		font-weight: 300;
-		font-size: clamp(1.2rem, 2.85vw, 4rem); 
+		font-size: clamp(1rem, 2.85vw, 2rem); 
 	}
 
 	@media (min-width: 1024px) {
 		text-align: left;
+
+		p{
+			width: 60vw;
+		}
 	}
 
 `
@@ -42,7 +45,7 @@ const IconsContainer = styled.div`
 
     .icon {
         padding: .5em;
-        color:  #B2FF00;
+        color:  #D6ABBE;
     }
 
     @media (max-width: 1023px) {
