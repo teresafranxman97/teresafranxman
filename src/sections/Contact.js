@@ -10,8 +10,8 @@ import {
 	Footer
 } from '../Styles/Sections/ContactStyles';
 import { Icon } from "@iconify/react";
-import gradient from '../images/blurry-gradient-haikei.svg';
 import { ButtonContainer } from '../Styles/Components/ButtonStyles';
+import Title from '../Components/Title';
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -55,16 +55,12 @@ function Contact() {
 	};
 
 	return (
-		<ContactStyles
-			// style={{
-			// 	backgroundImage: `url(${gradient})`,
-			// 	backgroundSize: "cover",
-			// 	backgroundPosition: "right",
-			// 	height: "100vh"
-			// }}
-		>
+		<ContactStyles>
 			<Container>
-				<h1>Contact me</h1>
+				<Title
+					title="Contact"
+				>
+				</Title>
 				<form onSubmit={onSubmit}>
 					<TextContainer className="text-inputs">
 						<Label>

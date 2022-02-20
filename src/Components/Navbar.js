@@ -16,7 +16,7 @@ function Navbar() {
 				<span />
 			</Hamburger>
 			<Menu isOpen={isOpen}>
-				<MenuLink>
+			<MenuLink>
 					<Link to="/services">Services</Link>
 				</MenuLink>
 				<MenuLink>
@@ -25,7 +25,7 @@ function Navbar() {
 				<MenuLink>
 					<Link to="/about">About</Link>
 				</MenuLink>
-				<MenuLink>
+				<MenuLink className="primary-menulink" >
 					<Link to="/contact">Contact</Link>
 				</MenuLink>
 			</Menu>

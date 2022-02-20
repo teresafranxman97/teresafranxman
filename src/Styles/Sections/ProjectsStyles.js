@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 const ProjectsStyles = styled.div`
-	padding: 2em;
+	height: 100vh;
 
 	.project-container {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+		flex-flow: column wrap;
+		align-items: center;
 	}
 
 	.project-content {
         margin: 1em;
-        width: 40%;
+		display: flex;
 
 		a {
 			text-decoration: none;
@@ -22,15 +21,14 @@ const ProjectsStyles = styled.div`
 	}
 
 	img {
-		width: 100%;
+		width: 30rem;
 		border-radius: 8px;
 	}
 
-	@media (max-width: 768px) {
-
-		.project-content {
-			width: 100%;
-		}
+	.info-container {
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
 	}
 `;
 

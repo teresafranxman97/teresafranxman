@@ -2,12 +2,15 @@ import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 import { Container, Content, ContentContainer } from '../Styles/Sections/SkillsStyles';
 import { Icon } from '@iconify/react';
+import Title from '../Components/Title';
 
 const Services = () => {
     return (
         <Container>
             <div className="header">
-                <h1 className="title">What I Do</h1>
+                <Title
+                    title="Services"
+                ></Title>
                 <p>As a Front End Developer I offer a variety of services. <br/>
                 From design, to development and even deployment of web applications
                 </p>
@@ -20,14 +23,6 @@ const Services = () => {
                     <Icon className="icon" icon="ic:twotone-design-services"/>
                     <h3>Web Design</h3>
                     <p>I design products that prioritize the user in order to provide exceptional experiences. </p>
-                </Content>
-                <Content 
-                    className="content"
-                    whileHover={{ scale: 1.1 }}
-                >
-                    <Icon className="icon" icon="bx:search-alt" />
-                    <h3>User Research</h3>
-                    <p>Every good plan begins with research.  </p>
                 </Content>
                 <Content 
                     className="content"

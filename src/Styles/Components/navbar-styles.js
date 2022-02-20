@@ -50,6 +50,9 @@ const Menu = styled.div `
 		min-width: 100vw;
 	}
 
+	.primary-menulink {
+		background: #D6ABBE;
+	}
 `
 
 const MenuLink = styled.div `

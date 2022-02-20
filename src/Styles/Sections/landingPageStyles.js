@@ -10,7 +10,7 @@ const Styled = styled.div`
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 80vh;
 	justify-content: center;
 `
 
@@ -28,19 +28,12 @@ const Content = styled.div`
 		font-size: clamp(1rem, 2.85vw, 2rem); 
 	}
 
-	@media (min-width: 1024px) {
-		text-align: left;
-
-		p{
-			width: 60vw;
-		}
-	}
-
 `
 
 const IconsContainer = styled.div`
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	padding-top: 2rem;
 
     .icon {
@@ -49,7 +42,7 @@ const IconsContainer = styled.div`
     }
 
     @media (max-width: 1023px) {
-		width: 100%;
+
 		justify-content: center;
 	}
 `

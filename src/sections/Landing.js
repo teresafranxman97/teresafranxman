@@ -13,11 +13,17 @@ import {
 import { ButtonContainer } from "../Styles/Components/ButtonStyles";
 import { Icon } from '@iconify/react';
 import Button from "../Components/button";
+import gradient from '../images/blurry-gradient-haikei.svg';
 
 
 function Landing() {
 	return (
-		<Styled>
+		<Styled
+			style={{
+				backgroundImage: `url(${gradient})`,
+				backgroundSize: "cover"
+			}}
+		>
 			<Container >
 				<Content>
 					<h1>Hi, I'm Teresa <Icon icon="mdi:hand-wave-outline" /> </h1>

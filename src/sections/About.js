@@ -1,8 +1,13 @@
 import React from "react";
+import Title from "../Components/Title";
 
 const About = () => {
     return (
-        <>About</>
+        <div>
+            <Title
+                title="About"
+            ></Title>
+        </div>
     )
 }
 

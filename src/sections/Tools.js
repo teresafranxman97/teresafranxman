@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import data from "../DataFiles/tools-data";
 import { Icon } from "@iconify/react";
 import StyledTools from "../Styles/Sections/toolsStyles";
+import Title from '../Components/Title';
 
 const Tools = () => {
 	const [skills] = useState(data);
 
 	return (
 		<StyledTools>
-            <h1>Tools I use to plan, design, and build quality applications. </h1>
+			<Title
+				title="Toolkit"
+			></Title>
+            <p>Tools I use to plan, design, and build quality applications. </p>
 			<div className="content-grid">
 				{skills.map((skill) => (
 					<div className="skills-container" key={skill.id}>

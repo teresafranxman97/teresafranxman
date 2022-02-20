@@ -15,7 +15,7 @@ const ButtonStyles = styled(motion.div) `
 	}
 
 	a {
-		color: #FFFFFF;
+		color: ${props => props.primary ? '#FFFFFF' : '#15161C' } ;
 		font-size: 18px;
 		text-align: center;
 		display: block;
@@ -43,6 +43,7 @@ const ButtonContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 
 	@media (min-width: 1024px) {
 		flex-direction: row;
