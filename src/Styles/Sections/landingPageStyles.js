@@ -43,7 +43,12 @@ const Container = styled.div`
 		}
 
 		.left-container {
-			padding: 0 1rem;
+			padding-right: 1rem;
+		}
+
+		.right-container {
+			display: flex;
+			justify-content: end;
 		}
 	}
 `

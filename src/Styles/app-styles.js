@@ -5,7 +5,7 @@ const AppStyles = styled.div`
 	min-height: 100vh;
 
 	@media (min-width: 1023px) {
-		padding: 0 7em;
+		padding: 0 5rem;
 	}
 `;
 

@@ -16,6 +16,11 @@ const NavStyles = styled.div`
 		text-decoration: none;
 		font-size: 15px;
 	}
+
+	@media (min-width: 1023px) {
+		left: ${({isOpen}) => (isOpen ? "0" : "5vw" )};
+		right: ${({isOpen}) => (isOpen ? "0" : "5vw" )};
+	}
 `;
 
 const Hamburger = styled.div `
