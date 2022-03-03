@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
-import { Container, Content, ContentContainer } from '../Styles/Sections/SkillsStyles';
+import { Container, Content, ContentContainer } from '../Styles/Sections/ServicesStyles';
 import { Icon } from '@iconify/react';
 import Title from '../Components/Title';
 

@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const StyledTools = styled.div`   
-    padding: 7rem;
+    padding: 3rem 10rem;
+    height: 100vh;
 
     .content-grid {
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     
     .skills-container {

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import ProjectsStyles from "../Styles/Sections/ProjectsStyles";
 import data from '../DataFiles/data';

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const AppStyles = styled.div`
-	color: black;
-	
-	.app-container {
-		min-height: 100vh;
+	padding: 0 1em;
+	min-height: 100vh;
+
+	@media (min-width: 1023px) {
+		padding: 0 7em;
 	}
 `;
 

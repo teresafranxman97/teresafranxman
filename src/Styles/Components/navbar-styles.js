@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: ${({ isOpen }) => (isOpen ? "#FF00B2" : "#00122026")};
+	background: ${({ isOpen }) => (isOpen ? " #15161C" : "")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	position: fixed;
 	top: 0;
-	left: 0;
-    right: 0;
+	left: ${({isOpen}) => (isOpen ? "0" : "1rem" )};
+    right: ${({isOpen}) => (isOpen ? "0" : "1rem" )};
 	
 	a {
-		color: #FFFFFF;
-		margin-left: 1vw;
+		color: ${({ isOpen }) => (isOpen ? "white" : "#15161C")};
 		text-decoration: none;
+		font-size: 15px;
 	}
 `;
 
@@ -26,7 +26,7 @@ const Hamburger = styled.div `
 	span {
 		height: 2px;
 		width: 25px;
-		background: #B2FF00;	
+		background: #15161C;	
 		margin-bottom: 4px;
 		border-radius: 5px;
 	}
@@ -51,7 +51,16 @@ const Menu = styled.div `
 	}
 
 	.primary-menulink {
-		background: #D6ABBE;
+		background: #15161C;
+		border-radius: 5px;
+		height: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		a {
+			color: white;
+		}
 	}
 `
 
@@ -73,7 +82,8 @@ const Logo = styled.div `
 	font-size: 2rem;
 	
 	a {
-		color: #B2FF00;	
+		color: #15161C;	
+		font-size: 30px;
 	}
 `
 

@@ -2,12 +2,10 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const ButtonStyles = styled(motion.div) `
-	background: ${props => props.primary ? "#D6ABBE" : "transparent"};
-	width: 100%;
+	background: ${props => props.primary ? "transparent" : "#15161C"};
 	border: 1px solid ${props => props.theme.main};
 	border-radius: 5px;
 	cursor: pointer;
-	margin-right: 1rem;
 
 	:hover {
 		background: ${props => props.theme.main};
@@ -15,12 +13,17 @@ const ButtonStyles = styled(motion.div) `
 	}
 
 	a {
-		color: ${props => props.primary ? '#FFFFFF' : '#15161C' } ;
-		font-size: 18px;
+		color: ${props => props.primary ? '#15161C' : "white" } ;
+		font-size: 15px;
 		text-align: center;
 		display: block;
-		margin: 8px;	
-		font-weight: 300;
+		padding: 8px;	
+		font-weight: 400;
+		text-decoration: none;
+	}
+
+	@media (min-width: 767px) {
+		margin-right: 1rem;
 	}
 
 	@media (min-width:  480px) {
@@ -34,7 +37,7 @@ const ButtonStyles = styled(motion.div) `
 
 ButtonStyles.defaultProps = {
 	theme: {
-		main: "#D6ABBE"
+		main: "black"
 	}
 }
 
@@ -42,10 +45,8 @@ ButtonStyles.defaultProps = {
 const ButtonContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 
-	@media (min-width: 1024px) {
+	@media (min-width: 767px) {
 		flex-direction: row;
 	}
 `

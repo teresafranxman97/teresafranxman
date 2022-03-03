@@ -10,11 +10,6 @@ const data = [
 		title: "Figma",
 	},
 	{
-		id: 3,
-		icon: "openmoji:wireframes",
-		title: "Wireframes & Prototypes",
-	},
-	{
 		id: 4,
 		icon: "codicon:github-alt",
 		title: "Github",
@@ -76,6 +71,11 @@ const data = [
 		icon: "simple-icons:styledcomponents",
 		title: "Styled Components",
 	},
+	{
+		id: 16,
+		icon: "arcticons:letter-lowercase-w",
+		title: "Whimsical"
+	}
 ];
 
 export default data;

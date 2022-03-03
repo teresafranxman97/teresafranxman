@@ -10,14 +10,13 @@ const Container = styled.div`
     min-height: 100vh;
 
     h1 {
-        font-size: clamp(2rem, 2vw, 3rem);
-        font-weight: 300;
         margin: 5px 0;
     }  
     
     p {
         margin: 0;
-        font-size: clamp(.85rem, 1.25vw, 2rem);
+        font-weight: 300;
+        font-size: 23px;
     }
 
     @media (min-width: 1024px) {
@@ -26,23 +25,24 @@ const Container = styled.div`
         }
     }
 
-    @media (min-width: 769px) {
-        padding-left: 6rem;
-        padding-right: 6rem;
+    @media (min-width: 1023px) {
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 `
 
 const Content = styled(motion.div) `
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
     padding: 2rem;
     
     p {
         
-        font-weight: 100;
+        font-weight: 200;
+        font-size: 18px;
     }
 
     h3 {
@@ -67,8 +67,7 @@ const ContentContainer = styled.div`
     
     @media (min-width: 769px) {
         grid-template-columns: repeat(2, 1fr);
-        height: 70vh;
     }
 `
 
-export { Container, Content, ContentContainer }
+export { Container, Content, ContentContainer };

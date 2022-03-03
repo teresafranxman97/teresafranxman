@@ -12,6 +12,7 @@ const ProjectsStyles = styled.div`
 	.project-content {
         margin: 1em;
 		display: flex;
+		flex-flow: column wrap;
 
 		a {
 			text-decoration: none;
@@ -21,7 +22,7 @@ const ProjectsStyles = styled.div`
 	}
 
 	img {
-		width: 30rem;
+		width: 100%;
 		border-radius: 8px;
 	}
 
@@ -30,6 +31,19 @@ const ProjectsStyles = styled.div`
 		flex-direction: column;
 		width: 40vw;
 	}
+
+
+	@media (min-width: 1023px) {
+		.project-content {
+			flex-direction: row;
+		}
+
+		img {
+			width: 50%;
+		}
+	}
+
+	
 `;
 
 export default ProjectsStyles;

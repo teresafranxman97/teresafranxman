@@ -1,49 +1,61 @@
 import styled from "styled-components";
-import { motion } from 'framer-motion/dist/framer-motion';
 
 const Styled = styled.div`
-	a {
-		text-decoration: none;
-	}
+
 `;
 
 const Container = styled.div`
+	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	height: 80vh;
-	justify-content: center;
+	flex-flow: column-reverse;
+	justify-content: start;
+	padding-top: 10vh;
+
+	h1 {
+		margin: 0;
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	p {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	img {
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	
+	@media (min-width: 1023px) {
+		flex-flow: row;
+		align-items: center;
+		height: 80vh;
+		justify-content: center;
+		
+		.content-container {
+			width: 50vw;
+		}
+		
+		img {
+			width: 40vw;
+		}
+
+		.left-container {
+			padding: 0 1rem;
+		}
+	}
 `
 
 const Content = styled.div`
-	text-align: center;
-	
-	h1 {
-		font-size: clamp(1rem, 1.2vw, 4rem);
-		font-weight: 600;
-		height: 1px;
-	}
-
-	p {	
-		font-weight: 300;
-		font-size: clamp(1rem, 2.85vw, 2rem); 
-	}
 
 `
 
 const IconsContainer = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-top: 2rem;
-
-    .icon {
-        padding: .5em;
-        color:  #D6ABBE;
-    }
-
-    @media (max-width: 1023px) {
-
-		justify-content: center;
+	a {
+		color: #15161C;
+		margin-right: 1rem;
 	}
 `
 
