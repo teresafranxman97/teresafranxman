@@ -17,9 +17,9 @@ const NavStyles = styled.div`
 		font-size: 15px;
 	}
 
-	@media (min-width: 1023px) {
-		left: ${({isOpen}) => (isOpen ? "0" : "5vw" )};
-		right: ${({isOpen}) => (isOpen ? "0" : "5vw" )};
+	@media (min-width: 769px) {
+		left: ${({isOpen}) => (isOpen ? "0" : "6vw" )};
+		right: ${({isOpen}) => (isOpen ? "0" : "6vw" )};
 	}
 `;
 
@@ -55,18 +55,6 @@ const Menu = styled.div `
 		min-width: 100vw;
 	}
 
-	.primary-menulink {
-		background: #15161C;
-		border-radius: 5px;
-		height: 12px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		a {
-			color: white;
-		}
-	}
 `
 
 const MenuLink = styled.div `

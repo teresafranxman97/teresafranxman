@@ -5,20 +5,19 @@ const Styled = styled.div`
 `;
 
 const Container = styled.div`
-	height: 100vh;
+	height: 40vh;
 	display: flex;
-	flex-flow: column-reverse;
-	justify-content: start;
-	padding-top: 10vh;
+	flex-flow: column;
+	justify-content: end;
 
 	h1 {
 		margin: 0;
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 32px;
+		font-weight: 500;
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 15px;
 		font-weight: 300;
 	}
 
@@ -29,32 +28,28 @@ const Container = styled.div`
 
 	
 	@media (min-width: 1023px) {
-		flex-flow: row;
-		align-items: center;
-		height: 80vh;
-		justify-content: center;
-		
-		.content-container {
-			width: 50vw;
-		}
+		justify-content: end;
 		
 		img {
-			width: 40vw;
+			width: 50vw;
 		}
 
-		.left-container {
-			padding-right: 1rem;
-		}
-
-		.right-container {
-			display: flex;
-			justify-content: end;
+		p {
+			width: 60vw;
 		}
 	}
-`
 
-const Content = styled.div`
+	@media (min-width: 769px) {
+		height: 50vh;
 
+		h1 {
+			font-size: 55px;
+		}
+
+		p {
+			font-size: 24px;
+		}
+	}
 `
 
 const IconsContainer = styled.div`
@@ -64,4 +59,4 @@ const IconsContainer = styled.div`
 	}
 `
 
-export { Styled, Container, IconsContainer, Content };
+export { Styled, Container, IconsContainer };

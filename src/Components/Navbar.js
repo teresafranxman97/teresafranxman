@@ -16,16 +16,22 @@ function Navbar() {
 				<span />
 			</Hamburger>
 			<Menu isOpen={isOpen}>
-			<MenuLink>
+				<MenuLink>
+					<Link to="/tools">Tools</Link>
+				</MenuLink>
+				<MenuLink>
 					<Link to="/services">Services</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link to="/projects">Projects</Link>
+					<Link to="/process">Process</Link>
 				</MenuLink>
 				<MenuLink>
 					<Link to="/about">About</Link>
 				</MenuLink>
-				<MenuLink className="primary-menulink" >
+				<MenuLink>
+					<Link to="/projects">Projects</Link>
+				</MenuLink>
+				<MenuLink >
 					<Link to="/contact">Contact</Link>
 				</MenuLink>
 			</Menu>

@@ -4,10 +4,8 @@ import { motion } from "framer-motion/dist/framer-motion";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    padding-top: 10vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    min-height: 100vh;
+    justify-content: center;
+    height: 100vh;
 
     h1 {
         margin: 5px 0;
@@ -21,13 +19,8 @@ const Container = styled.div`
 
     @media (min-width: 1024px) {
         .header {
-            width: 60%;
+            width: 50vw;
         }
-    }
-
-    @media (min-width: 1023px) {
-        padding-left: 10rem;
-        padding-right: 10rem;
     }
 `
 
@@ -37,7 +30,8 @@ const Content = styled(motion.div) `
     align-items: left;
     text-align: left;
     justify-content: left;
-    padding: 2rem;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
     
     p {
         
@@ -56,14 +50,13 @@ const Content = styled(motion.div) `
     }
 
     @media (min-width: 1023px) {
-        padding: 3rem;
+       
     }
 `
 
 const ContentContainer = styled.div`
     display: grid;
     gap: 2rem;
-    margin-top: 5vh;
     
     @media (min-width: 769px) {
         grid-template-columns: repeat(2, 1fr);
