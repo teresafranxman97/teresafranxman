@@ -9,11 +9,9 @@ const Services = () => {
         <Container>
             <div className="header">
                 <Title
-                    title="Services"
+                    title="Services I Offer"
                 ></Title>
-                <p>As a Front End Developer I offer a variety of services. <br/>
-                From design, to development and even deployment of web applications
-                </p>
+                <p>An enthusiastic developer who’s always ready to jump on the next project.</p>
             </div>
             <ContentContainer>
                 <Content 
@@ -21,8 +19,8 @@ const Services = () => {
                     whileHover={{ scale: 1.1 }}
                 >
                     <Icon className="icon" icon="ic:twotone-design-services"/>
-                    <h3>Web Design</h3>
-                    <p>I design products that prioritize the user in order to provide exceptional experiences. </p>
+                    <h3>UI/UX Design</h3>
+                    <p>I aim to design products that keep focus on the user in order to create the best possible experiences. </p>
                 </Content>
                 <Content 
                     className="content"
@@ -30,7 +28,7 @@ const Services = () => {
                 >
                     <Icon className="icon" icon="ic:baseline-developer-mode"/>
                     <h3>Front End Development</h3>
-                    <p>I utilize various tools and techniques that allow me to bring any idea to life.</p>
+                    <p>Utilizing various tools and techniques I develop accessible, responsive and visually appealing  user interfaces.</p>
                 </Content>
                 <Content 
                     className="content"
@@ -39,6 +37,14 @@ const Services = () => {
                     <Icon className="icon" icon="bxs:data" />
                     <h3>Back End Development</h3>
                     <p>I am knowledgable in server-side development and comfortable working with databases.</p>
+                </Content>
+                <Content 
+                    className="content"
+                    whileHover={{ scale: 1.1 }}
+                >
+                    <Icon className="icon" icon="bxs:data" />
+                    <h3>User Research</h3>
+                    <p>In order to solve  </p>
                 </Content>
             </ContentContainer>
         </Container>
