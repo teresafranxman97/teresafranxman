@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Icon } from "@iconify/react";
 import ProjectsStyles from "../Styles/Sections/ProjectsStyles";
 import data from '../DataFiles/data';
 import Title from '../Components/Title';
