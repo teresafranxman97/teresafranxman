@@ -12,12 +12,12 @@ const Container = styled.div`
 
 	h1 {
 		margin: 0;
-		font-size: 32px;
+		font-size: clamp(2rem, 4vw, 3rem);
 		font-weight: 500;
 	}
 
 	p {
-		font-size: 15px;
+		font-size: clamp(1rem, 2vw, 1.25rem);
 		font-weight: 300;
 	}
 
@@ -33,21 +33,13 @@ const Container = styled.div`
 		img {
 			width: 50vw;
 		}
-
-		p {
-			width: 60vw;
-		}
 	}
 
 	@media (min-width: 769px) {
 		height: 50vh;
 
-		h1 {
-			font-size: 55px;
-		}
-
 		p {
-			font-size: 24px;
+			width: 50vw;
 		}
 	}
 `

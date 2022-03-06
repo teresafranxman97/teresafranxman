@@ -9,10 +9,7 @@ import {
 	Container,
 	IconsContainer,  
 } from "../Styles/Sections/landingPageStyles";
-import { ButtonContainer } from "../Styles/Components/ButtonStyles";
 import { Icon } from '@iconify/react';
-import Button from "../Components/button";
-import illustration from '../images/undraw_website.svg';
 
 const Landing = () => {
 	return (
@@ -32,7 +29,7 @@ const Landing = () => {
 				</IconsContainer>
 			</Container>
 			<Projects />
-			{/* <Services /> */}
+			<Services />
 			{/* <Tools /> */}
 			{/* <About /> */}
 			{/* <Contact /> */}

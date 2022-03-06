@@ -4,22 +4,28 @@ import { motion } from "framer-motion/dist/framer-motion";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10vh 0;
 
     h1 {
         margin: 5px 0;
     }  
     
     p {
-        margin: 0;
+        margin-right: 3vw;
         font-weight: 300;
-        font-size: 23px;
+        font-size: clamp(1rem, 1.25vw, 1.75rem);
     }
 
-    @media (min-width: 1024px) {
+    .header {
+        margin: 1rem 0;
+    }
+
+    @media (min-width: 1023px) {
+        padding: 15vh 0;
+
         .header {
-            width: 50vw;
+            width: 60vw;
         }
     }
 `
@@ -32,26 +38,26 @@ const Content = styled(motion.div) `
     justify-content: left;
     border: 1px solid #FFFFFF;
     background: #FFFFFF;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 4px #dfdfdf;
     
     p {
-        
-        font-weight: 200;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     h3 {
-        margin: 1em;
+        margin: .75em 0;
+        font-size: 18px;
     }
 
     .icon {
-        color: #FF00B2;
+        color: black;
         width: 3.25rem;
         height: 3.25rem;
     }
 
-    @media (min-width: 1023px) {
-       
-    }
+
 `
 
 const ContentContainer = styled.div`

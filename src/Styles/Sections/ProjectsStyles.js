@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const ProjectsStyles = styled.div`
-	height: 100vh;
-	padding-top: 13vh;
+	min-height: 100vh;
+	padding-top: 10vh;
 
 	.project-container {
 		display: grid;
@@ -19,7 +19,7 @@ const ProjectsStyles = styled.div`
 
 	img {
 		width: 100%;
-		height: 350px;
+		height: 100%;
 		border-radius: 5px;
 	}
 
@@ -29,14 +29,13 @@ const ProjectsStyles = styled.div`
 		width: 40vw;
 	}
 
-
-	@media (min-width: 769px) {
-		.project-container {
-			grid-template-columns: repeat(2, 1fr);
-		}
+	@media (min-width: 1023px) {
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 15vh;
 	}
 
-	
 `;
 
 export default ProjectsStyles;

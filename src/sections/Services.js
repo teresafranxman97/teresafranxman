@@ -1,8 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
 import { Container, Content, ContentContainer } from '../Styles/Sections/ServicesStyles';
 import { Icon } from '@iconify/react';
 import Title from '../Components/Title';
+import ContactMe from "../Components/ContactMe";
 
 const Services = () => {
     return (
@@ -11,7 +11,7 @@ const Services = () => {
                 <Title
                     title="Services I Offer"
                 ></Title>
-                <p>An enthusiastic developer who’s always ready to jump on the next project.</p>
+                <p>An enthusiastic developer who’s always ready to jump on the next project.  I offer a variety of services in design, to development and deployment of web applications.</p>
             </div>
             <ContentContainer>
                 <Content 
@@ -25,7 +25,7 @@ const Services = () => {
                 <Content 
                     className="content"
                     whileHover={{ scale: 1.1 }}
-                >
+                    >
                     <Icon className="icon" icon="ic:baseline-developer-mode"/>
                     <h3>Front End Development</h3>
                     <p>Utilizing various tools and techniques I develop accessible, responsive and visually appealing  user interfaces.</p>
@@ -33,7 +33,7 @@ const Services = () => {
                 <Content 
                     className="content"
                     whileHover={{ scale: 1.1 }}
-                >
+                    >
                     <Icon className="icon" icon="bxs:data" />
                     <h3>Back End Development</h3>
                     <p>I am knowledgable in server-side development and comfortable working with databases.</p>
@@ -42,11 +42,12 @@ const Services = () => {
                     className="content"
                     whileHover={{ scale: 1.1 }}
                 >
-                    <Icon className="icon" icon="bxs:data" />
+                    <Icon className="icon" icon="akar-icons:search" />
                     <h3>User Research</h3>
-                    <p>In order to solve  </p>
+                    <p>I prioritize understanding the user, and product to be designed through extensive research.</p>
                 </Content>
             </ContentContainer>
+            <ContactMe/>
         </Container>
     )
 }
