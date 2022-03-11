@@ -5,48 +5,44 @@ const Styled = styled.div`
 `;
 
 const Container = styled.div`
-	height: 40vh;
+	height: 100vh;
 	display: flex;
 	flex-flow: column;
-	justify-content: end;
+	justify-content: center;
 
 	h1 {
 		margin: 0;
-		font-size: clamp(2rem, 4vw, 3rem);
-		font-weight: 500;
+		font-size: clamp(1rem, 2.5vw, 1.5rem);
+		font-weight: 400;
+		color: #3F3565;
 	}
 
 	p {
-		font-size: clamp(1rem, 2vw, 1.25rem);
-		font-weight: 300;
+		font-size: clamp(1.5rem, 2.5vw, 3rem);
+		font-weight: 800;
+		margin: 0;
+		color: #3F3565;
 	}
 
-	img {
-		width: 100%;
-		border-radius: 5px;
-	}
-
-	
-	@media (min-width: 1023px) {
-		justify-content: end;
-		
-		img {
-			width: 50vw;
-		}
+	.arrow {
+		position: absolute;
+		bottom: 0;
+		left: 49vw;
+		color: #3F3565;
 	}
 
 	@media (min-width: 769px) {
-		height: 50vh;
-
 		p {
-			width: 50vw;
+			width: 60vw;
 		}
 	}
 `
 
 const IconsContainer = styled.div`
+	margin-top: 1rem;
+	
 	a {
-		color: #15161C;
+		color: #3F3565;
 		margin-right: 1rem;
 	}
 `

@@ -1,4 +1,5 @@
 import clone from "../images/googleclone.png";
+import underdogdevs from "../images/underdogdevs.png";
 
 const data = [
 	{
@@ -12,7 +13,7 @@ const data = [
 	},
 	{
 		id: 2,
-		src: `${clone}`,
+		src: `${underdogdevs}`,
 		title: "Underdog Devs",
 		position: "UI/UX Engineer",
 		description:

@@ -2,18 +2,21 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion/dist/framer-motion';
 
 const ButtonStyles = styled(motion.div) `
-	background: ${props => props.primary ? "transparent" : "#15161C"};
+	background: transparent;
 	border: 1px solid ${props => props.theme.main};
-	border-radius: 5px;
 	cursor: pointer;
 
 	:hover {
 		background: ${props => props.theme.main};
 		transition: 0.3s;
+		
+		a {
+			color: #FFFDFD;
+		}
 	}
 
 	a {
-		color: ${props => props.primary ? '#15161C' : "white" } ;
+		color: ${props => props.primary ? "#FFFDFD" : '#3F3565' } ;
 		font-size: 15px;
 		text-align: center;
 		display: block;
@@ -37,7 +40,7 @@ const ButtonStyles = styled(motion.div) `
 
 ButtonStyles.defaultProps = {
 	theme: {
-		main: "black"
+		main: '#3F3565'
 	}
 }
 

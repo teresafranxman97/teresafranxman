@@ -9,10 +9,12 @@ const Tools = () => {
 
 	return (
 		<StyledTools>
-			<Title
-				title="Toolkit"
-			></Title>
-            <p>Tools I use to plan, design, and build quality applications. </p>
+			<div className="title-container">
+				<Title
+					title="Toolkit"
+				></Title>
+				<p>Skilled in design, development and deployment of web applications. I utilize various frameworks, libraries and tools to build exceptional experiences. </p>
+			</div>
 			<div className="content-grid">
 				{skills.map((skill) => (
 					<div className="skills-container" key={skill.id}>

@@ -7,7 +7,6 @@ import Contact from "./sections/Contact";
 import Navbar from "./Components/Navbar";
 import AppStyles from "./Styles/app-styles";
 import Services from './sections/Services.js';
-import data from "./DataFiles/data";
 import About from "./sections/About";
 
 function App() {

@@ -17,7 +17,7 @@ const Landing = () => {
 			<Container>
 				<div className="content">
 					<h1>Hi, I'm Teresa <Icon icon="emojione:hand-with-fingers-splayed" /> </h1>
-					<p>I am a passionate Front End Developer focusing on creating quality, user-centered digital experiences that will help grow your business.</p>
+					<p>A passionate Front End Engineer currently focusing on creating quality, user-centered digital experiences. </p>
 				</div>
 				<IconsContainer >
 					<a href="https://github.com/teresafranxman97">
@@ -27,10 +27,11 @@ const Landing = () => {
 						<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
 					</a>
 				</IconsContainer>
+				<Icon className="arrow" icon="bytesize:arrow-bottom" width={50} />
 			</Container>
 			<Projects />
 			<Services />
-			{/* <Tools /> */}
+			<Tools />
 			{/* <About /> */}
 			{/* <Contact /> */}
 		</Styled>

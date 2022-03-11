@@ -11,7 +11,7 @@ const Services = () => {
                 <Title
                     title="Services I Offer"
                 ></Title>
-                <p>An enthusiastic developer who’s always ready to jump on the next project.  I offer a variety of services in design, to development and deployment of web applications.</p>
+                <p>As an enthusiastic developer I’m always ready to jump onto the next project and offer a variety of services in design, to development as well as deployment of web applications. </p>
             </div>
             <ContentContainer>
                 <Content 

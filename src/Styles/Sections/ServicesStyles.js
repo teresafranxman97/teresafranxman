@@ -4,6 +4,8 @@ import { motion } from "framer-motion/dist/framer-motion";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+
     min-height: 100vh;
     padding: 10vh 0;
 
@@ -12,20 +14,19 @@ const Container = styled.div`
     }  
     
     p {
+        margin: 0;
         margin-right: 3vw;
         font-weight: 300;
-        font-size: clamp(1rem, 1.25vw, 1.75rem);
+        font-size: clamp(.85rem, 1.25vw, 1.75rem);
     }
 
-    .header {
-        margin: 1rem 0;
+    .header p {
+        color: #3F3565;
     }
 
     @media (min-width: 1023px) {
-        padding: 15vh 0;
-
         .header {
-            width: 60vw;
+            width: 50vw;
         }
     }
 `
@@ -36,11 +37,10 @@ const Content = styled(motion.div) `
     align-items: left;
     text-align: left;
     justify-content: left;
-    border: 1px solid #FFFFFF;
-    background: #FFFFFF;
+    border: 3px solid #3F3565;
+    background: #3F3565;
     padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 2px 4px #dfdfdf;
+    color: #FFFDFD;
     
     p {
         font-size: 14px;
@@ -52,7 +52,6 @@ const Content = styled(motion.div) `
     }
 
     .icon {
-        color: black;
         width: 3.25rem;
         height: 3.25rem;
     }
@@ -62,11 +61,13 @@ const Content = styled(motion.div) `
 
 const ContentContainer = styled.div`
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
+    margin: 2rem 0;
     
-    @media (min-width: 769px) {
+    @media (min-width: 767px) {
         grid-template-columns: repeat(2, 1fr);
     }
 `
+
 
 export { Container, Content, ContentContainer };

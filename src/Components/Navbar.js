@@ -8,7 +8,7 @@ function Navbar() {
 	return (
 		<NavStyles isOpen={isOpen} >
 			<Logo>
-				<Link to="/teresafranxman">tf</Link>
+				<Link to="/teresafranxman">teresa.</Link>
 			</Logo>		
 			<Hamburger onClick={() => setIsOpen(!isOpen)} >
 				<span />
@@ -21,9 +21,6 @@ function Navbar() {
 				</MenuLink>
 				<MenuLink>
 					<Link to="/services">Services</Link>
-				</MenuLink>
-				<MenuLink>
-					<Link to="/process">Process</Link>
 				</MenuLink>
 				<MenuLink>
 					<Link to="/about">About</Link>
