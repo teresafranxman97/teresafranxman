@@ -2,9 +2,20 @@ import styled from "styled-components";
 
 const ContactStyles = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    height: 100vh;
+    padding: 10vh 0;
+    min-height: 100vh;  
+
+    .title-container p {
+        font-size: clamp(1rem, 1vw, 2rem);
+        color: #3F3565;
+    }
+
+    @media (min-width: 768px) {
+        .title-container {
+            width: 40rem;
+        }
+    }
 `
 
 const Container = styled.div`
@@ -20,19 +31,43 @@ const Container = styled.div`
 
     textarea {
         background: transparent;
-        color: white;
+        border: 3px solid #DFDFDF;
+        padding: 0.75rem;
 
         ::placeholder {
-            color: #FFFFFF;
+            color: #928AB2;
         }
     }
 
-    @media (min-width: 768px) {
-        width: 50vw;
+    button {
+        background: transparent;
+        border: 1px solid #3F3565;
+        cursor: pointer;
+        color: #3F3565;
+        font-size: 15px;
+        text-align: center;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .button-container {
+        margin-top: 1vh;
+    }
+
+    @media(min-width: 480px) {
+        button {
+            width: 20rem;
+        }
     }
 `
 const TextContainer = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
 `
 
 const Footer = styled.div`
@@ -46,16 +81,17 @@ const Footer = styled.div`
 `
 
 const Label = styled.div`
-    border: 3px solid #FFFFFF;
+    border: 3px solid #DFDFDF;
     margin-bottom: 1rem;
+    padding: 0.75rem;
     
     input[type=text] {
         border: none;
         background: transparent;
-        color: #FFFFFF;
+        color: #928AB2;
         
         ::placeholder {
-            color: #FFFFFF;
+            color: #928AB2;
         }
     }
 
@@ -63,7 +99,6 @@ const Label = styled.div`
 
 const Icons = styled.div`
     flex-direction: row;
-    padding: 1rem;
 
     @media (min-width: 768px) {
         width: 50vw;
@@ -76,32 +111,16 @@ const IconContainer = styled.div`
     align-items: center;
     justify-content: left;
 
+    .icon {
+        color: #3F3565;
+    }
+
     p {
         margin-left: 1rem;
+        color: #3F3565;
     }
 `
 
-const ButtonContainer = styled.div`
-    margin-top: 1rem;
 
-    button {
-        background: transparent;
-        color: #FFFFFF;
-        width: 15rem;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        text-align: center;
-        border: 3px solid #FFFFFF;
-        border-radius: 5px;
-        cursor: pointer;
 
-        :hover {
-            background: #1F306E;
-            transition: 0.3s;
-            border: 3px solid #1F306E;
-        }
-    }
-    
-`
-
-export { ContactStyles, Container, Footer, Label, Icons, IconContainer, ButtonContainer, TextContainer}
+export { ContactStyles, Container, Footer, Label, Icons, IconContainer, TextContainer}

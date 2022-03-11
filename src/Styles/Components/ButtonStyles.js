@@ -48,6 +48,7 @@ ButtonStyles.defaultProps = {
 const ButtonContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	margin-top: 1vh;
 
 	@media (min-width: 767px) {
 		flex-direction: row;

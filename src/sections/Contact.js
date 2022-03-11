@@ -10,7 +10,6 @@ import {
 	Footer
 } from '../Styles/Sections/ContactStyles';
 import { Icon } from "@iconify/react";
-import { ButtonContainer } from '../Styles/Components/ButtonStyles';
 import Title from '../Components/Title';
 
 function Contact() {
@@ -56,11 +55,14 @@ function Contact() {
 
 	return (
 		<ContactStyles>
-			<Container>
+			<div className="title-container">
 				<Title
-					title="Contact"
+					title="	Get in touch"
 				>
 				</Title>
+				<p>Interested in discussing an idea or just want to chat? Shoot me a message and I’ll get back to you as soon as possible.</p>
+			</div>
+			<Container>
 				<form onSubmit={onSubmit}>
 					<TextContainer className="text-inputs">
 						<Label>
@@ -93,28 +95,25 @@ function Contact() {
 							onChange={handleChange}
 						></textarea>
 					</div>
-					<ButtonContainer>
+					<div className="button-container">
 						<button type="submit">Submit</button>
-					</ButtonContainer>
+					</div>
 				</form>
 			</Container>
 			<Icons>
 				<IconContainer>
-					<Icon className="icon" icon="fontisto:email" width={20} />
+					<Icon className="icon" icon="fontisto:email" width={25} />
 					<p> tereafranxman97@gmail.com </p>
 				</IconContainer>
 				<IconContainer>
-					<Icon className="icon" icon="akar-icons:location" width={20} />
+					<Icon className="icon" icon="akar-icons:location" width={25} />
 					<p> Minnesota, U.S.A. </p>
 				</IconContainer>
 				<IconContainer>
-					<Icon className="icon" icon="bi:phone" width={20} />
+					<Icon className="icon" icon="bi:phone" width={25} />
 					<p>507.686.0322</p>
 				</IconContainer>
 			</Icons>
-			<Footer>
-				@ Teresa Franxman 2022
-			</Footer>
 		</ContactStyles>
 	);
 }

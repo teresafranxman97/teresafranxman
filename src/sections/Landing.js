@@ -33,7 +33,7 @@ const Landing = () => {
 			<Services />
 			<Tools />
 			{/* <About /> */}
-			{/* <Contact /> */}
+			<Contact />
 		</Styled>
 	);
 }
