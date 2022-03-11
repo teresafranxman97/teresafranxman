@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/teresafranxman/static/css/main.47ce1995.chunk.css",
-    "main.js": "/teresafranxman/static/js/main.c0225ef4.chunk.js",
-    "main.js.map": "/teresafranxman/static/js/main.c0225ef4.chunk.js.map",
-    "runtime-main.js": "/teresafranxman/static/js/runtime-main.c0ec7109.js",
-    "runtime-main.js.map": "/teresafranxman/static/js/runtime-main.c0ec7109.js.map",
-    "static/js/2.167fe5e6.chunk.js": "/teresafranxman/static/js/2.167fe5e6.chunk.js",
-    "static/js/2.167fe5e6.chunk.js.map": "/teresafranxman/static/js/2.167fe5e6.chunk.js.map",
-    "static/js/3.3232bb61.chunk.js": "/teresafranxman/static/js/3.3232bb61.chunk.js",
-    "static/js/3.3232bb61.chunk.js.map": "/teresafranxman/static/js/3.3232bb61.chunk.js.map",
+    "main.css": "/teresafranxman/static/css/main.035a2bb8.chunk.css",
+    "main.js": "/teresafranxman/static/js/main.00e94574.chunk.js",
+    "main.js.map": "/teresafranxman/static/js/main.00e94574.chunk.js.map",
+    "runtime-main.js": "/teresafranxman/static/js/runtime-main.237718b2.js",
+    "runtime-main.js.map": "/teresafranxman/static/js/runtime-main.237718b2.js.map",
+    "static/js/2.e6593c3b.chunk.js": "/teresafranxman/static/js/2.e6593c3b.chunk.js",
+    "static/js/2.e6593c3b.chunk.js.map": "/teresafranxman/static/js/2.e6593c3b.chunk.js.map",
+    "static/js/3.4605fe91.chunk.js": "/teresafranxman/static/js/3.4605fe91.chunk.js",
+    "static/js/3.4605fe91.chunk.js.map": "/teresafranxman/static/js/3.4605fe91.chunk.js.map",
     "index.html": "/teresafranxman/index.html",
-    "static/css/main.47ce1995.chunk.css.map": "/teresafranxman/static/css/main.47ce1995.chunk.css.map",
-    "static/js/2.167fe5e6.chunk.js.LICENSE.txt": "/teresafranxman/static/js/2.167fe5e6.chunk.js.LICENSE.txt",
-    "static/media/googleclone.2991da1c.png": "/teresafranxman/static/media/googleclone.2991da1c.png"
+    "precache-manifest.a91807c94c08fc5cac8d993f5f9a2351.js": "/teresafranxman/precache-manifest.a91807c94c08fc5cac8d993f5f9a2351.js",
+    "service-worker.js": "/teresafranxman/service-worker.js",
+    "static/css/main.035a2bb8.chunk.css.map": "/teresafranxman/static/css/main.035a2bb8.chunk.css.map",
+    "static/js/2.e6593c3b.chunk.js.LICENSE.txt": "/teresafranxman/static/js/2.e6593c3b.chunk.js.LICENSE.txt",
+    "static/media/googleclone.png": "/teresafranxman/static/media/googleclone.eefb0444.png",
+    "static/media/underdogdevs.png": "/teresafranxman/static/media/underdogdevs.f96013a3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0ec7109.js",
-    "static/js/2.167fe5e6.chunk.js",
-    "static/css/main.47ce1995.chunk.css",
-    "static/js/main.c0225ef4.chunk.js"
+    "static/js/runtime-main.237718b2.js",
+    "static/js/2.e6593c3b.chunk.js",
+    "static/css/main.035a2bb8.chunk.css",
+    "static/js/main.00e94574.chunk.js"
   ]
 }
