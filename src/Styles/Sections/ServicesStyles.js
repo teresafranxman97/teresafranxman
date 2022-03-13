@@ -15,12 +15,12 @@ const Container = styled.div`
     p {
         margin: 0;
         margin-right: 3vw;
-        font-weight: 300;
         font-size: clamp(.85rem, 1.25vw, 1rem);
     }
 
     .header p {
         color: #3F3565;
+        font-size: clamp(.8rem,1vw,2rem);
     }
 
     @media (min-width: 1023px) {
@@ -42,12 +42,13 @@ const Content = styled(motion.div) `
     color: #FFFDFD;
     
     p {
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 400;
     }
 
     h3 {
         margin: .75em 0;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .icon {

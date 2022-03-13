@@ -104,10 +104,6 @@ const Label = styled.div`
 
 const Icons = styled.div`
     flex-direction: row;
-
-    @media (min-width: 1023px) {
-        width: 50vw;
-    }
 `
 
 const IconContainer = styled.div`
@@ -121,6 +117,7 @@ const IconContainer = styled.div`
     }
 
     p {
+        font-size: clamp(1rem, 1.25vw,1.5rem);
         margin-left: 1rem;
         color: #3F3565;
     }

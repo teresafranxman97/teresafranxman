@@ -8,6 +8,7 @@ import {
 	Styled,
 	Container,
 	IconsContainer,  
+	Arrow
 } from "../Styles/Sections/landingPageStyles";
 import { Icon } from '@iconify/react';
 
@@ -27,12 +28,14 @@ const Landing = () => {
 						<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
 					</a>
 				</IconsContainer>
-				<Icon className="arrow" icon="bytesize:arrow-bottom" width={50} />
+				<Arrow>
+					<Icon className="arrow" icon="bytesize:arrow-bottom" width={50} />
+				</Arrow>
 			</Container>
 			<Projects />
 			<Services />
 			<Tools />
-			{/* <About /> */}
+			<About />
 			<Contact />
 		</Styled>
 	);

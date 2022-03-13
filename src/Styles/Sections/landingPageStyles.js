@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Styled = styled.div`
 
@@ -26,7 +27,7 @@ const Container = styled.div`
 
 	.arrow {
 		position: absolute;
-		bottom: 0;
+		bottom: 1rem;
 		left: 49vw;
 		color: #3F3565;
 	}
@@ -47,4 +48,8 @@ const IconsContainer = styled.div`
 	}
 `
 
-export { Styled, Container, IconsContainer };
+const Arrow = styled(motion.div) `
+
+`
+
+export { Styled, Container, IconsContainer, Arrow };

@@ -60,7 +60,7 @@ function Contact() {
 					title="	Get in touch"
 				>
 				</Title>
-				<p>Interested in discussing an idea or just want to chat? Shoot me a message and I’ll get back to you as soon as possible.</p>
+				<p>Interested in discussing an idea or have a question? Shoot me a message and I’ll get back to you as soon as possible.</p>
 			</div>
 			<Container>
 				<FormContainer>

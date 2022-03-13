@@ -75,6 +75,16 @@ const data = [
 		id: 16,
 		icon: "arcticons:letter-lowercase-w",
 		title: "Whimsical"
+	},
+	{
+		id: 17,
+		icon: "akar-icons:vscode-fill",
+		title: "VSCode"
+	},
+	{
+		id: 18,
+		icon: "dashicons:rest-api",
+		title: "Rest API"
 	}
 ];
 

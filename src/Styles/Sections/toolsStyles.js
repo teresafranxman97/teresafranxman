@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledTools = styled.div` 
     color: #3F3565;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,7 @@ const StyledTools = styled.div`
         gap: 1rem;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 5vh;
+        color: #3F3565;
     }
     
     .skills-container {
@@ -22,26 +23,20 @@ const StyledTools = styled.div`
         justify-content: center;
 	}
 
-	h1 {
-        width: 50vw;
-        font-weight: 300;
-	}
-
     .icon {
-        color: black;
         border-radius: 5px 10px;
         padding: .5em;
     }
 
     h3 {
         font-size: .85rem;
+        font-weight: 300;
     }
 
     .title-container p {
         margin: 0;
         margin-right: 3vw;
-        font-weight: 300;
-        font-size: clamp(.85rem, 1.25vw, 1rem);
+        font-size: clamp(.8rem,1vw,2rem);
     }
 
     @media (min-width: 1023px) {
