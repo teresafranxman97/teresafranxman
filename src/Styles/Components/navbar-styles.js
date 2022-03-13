@@ -54,7 +54,6 @@ const Menu = styled.div `
 		transition: max-height 0.3s ease-in;
 		min-width: 100vw;
 	}
-
 `
 
 const MenuLink = styled.div `
@@ -79,7 +78,5 @@ const Logo = styled.div `
 		font-size: 25px;
 	}
 `
-
-
 
 export { NavStyles, Hamburger, Menu, MenuLink, Logo};

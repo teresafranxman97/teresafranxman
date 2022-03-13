@@ -59,8 +59,10 @@ const Content = styled(motion.div) `
 const ContentContainer = styled.div`
     display: grid;
     gap: 1rem;
+    margin-top: 1rem;
 
     @media (min-width: 767px) {
+        margin-top: 0;
         grid-template-columns: repeat(2, 1fr);
     }
 `

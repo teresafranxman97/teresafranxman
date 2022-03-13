@@ -18,7 +18,7 @@ const ContactStyles = styled.div`
     }
 `
 
-const Container = styled.div`
+const FormContainer = styled.div`
     form {
         background: transparent;
     }
@@ -32,7 +32,7 @@ const Container = styled.div`
     textarea {
         background: transparent;
         border: 3px solid #DFDFDF;
-        padding: 0.75rem;
+        height: 20vh;
 
         ::placeholder {
             color: #928AB2;
@@ -52,6 +52,11 @@ const Container = styled.div`
 
     .button-container {
         margin-top: 1vh;
+    }
+
+    @media (min-width: 1023px) {
+        width: 50vw;
+        margin-right: 4rem;
     }
 
     @media(min-width: 480px) {
@@ -83,7 +88,7 @@ const Footer = styled.div`
 const Label = styled.div`
     border: 3px solid #DFDFDF;
     margin-bottom: 1rem;
-    padding: 0.75rem;
+    height: 4vh;
     
     input[type=text] {
         border: none;
@@ -100,7 +105,7 @@ const Label = styled.div`
 const Icons = styled.div`
     flex-direction: row;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1023px) {
         width: 50vw;
     }
 `
@@ -121,6 +126,11 @@ const IconContainer = styled.div`
     }
 `
 
+const Container = styled.div`
+    @media (min-width: 1023px) {
+        display: flex;
+        justify-content: space-between;
+    }
+`
 
-
-export { ContactStyles, Container, Footer, Label, Icons, IconContainer, TextContainer}
+export { ContactStyles, Container, FormContainer, Footer, Label, Icons, IconContainer, TextContainer };

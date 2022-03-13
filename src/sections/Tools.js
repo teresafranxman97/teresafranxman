@@ -3,7 +3,6 @@ import data from "../DataFiles/tools-data";
 import { Icon } from "@iconify/react";
 import StyledTools from "../Styles/Sections/toolsStyles";
 import Title from '../Components/Title';
-import ContactMe from "../Components/ContactMe";
 
 const Tools = () => {
 	const [skills] = useState(data);
@@ -24,7 +23,6 @@ const Tools = () => {
 					</div>
 				))}
 			</div>
-			{/* <ContactMe /> */}
 		</StyledTools>
 	);
 };

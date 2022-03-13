@@ -41,7 +41,7 @@ const StyledTools = styled.div`
         margin: 0;
         margin-right: 3vw;
         font-weight: 300;
-        font-size: clamp(.85rem, 1.25vw, 1.75rem);
+        font-size: clamp(.85rem, 1.25vw, 1rem);
     }
 
     @media (min-width: 1023px) {
