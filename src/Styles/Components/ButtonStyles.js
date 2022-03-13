@@ -5,6 +5,7 @@ const ButtonStyles = styled(motion.div) `
 	background: transparent;
 	border: 1px solid ${props => props.theme.main};
 	cursor: pointer;
+	margin: 1rem 0;
 
 	:hover {
 		background: ${props => props.theme.main};

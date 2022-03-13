@@ -5,7 +5,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     min-height: 100vh;
     padding: 10vh 0;
 
@@ -17,7 +16,7 @@ const Container = styled.div`
         margin: 0;
         margin-right: 3vw;
         font-weight: 300;
-        font-size: clamp(.85rem, 1.25vw, 1.75rem);
+        font-size: clamp(.85rem, 1.25vw, 1rem);
     }
 
     .header p {
@@ -55,19 +54,15 @@ const Content = styled(motion.div) `
         width: 3.25rem;
         height: 3.25rem;
     }
-
-
 `
 
 const ContentContainer = styled.div`
     display: grid;
     gap: 1rem;
-    margin: 2rem 0;
-    
+
     @media (min-width: 767px) {
         grid-template-columns: repeat(2, 1fr);
     }
 `
-
 
 export { Container, Content, ContentContainer };

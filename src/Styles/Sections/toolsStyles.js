@@ -3,6 +3,9 @@ import styled from "styled-components";
 const StyledTools = styled.div` 
     color: #3F3565;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .content-grid {
         display: grid;
