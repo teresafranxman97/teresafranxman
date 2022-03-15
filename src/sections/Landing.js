@@ -4,23 +4,28 @@ import Tools from "./Tools";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
+import Button from "../Components/button";
 import {
 	Styled,
 	Container,
-	IconsContainer,  
-	Arrow
+	IconsContainer,
 } from "../Styles/Sections/landingPageStyles";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 const Landing = () => {
 	return (
 		<Styled>
 			<Container>
 				<div className="content">
-					<h1>Hi, I'm Teresa <Icon icon="emojione:hand-with-fingers-splayed" /> </h1>
-					<p>A passionate Front End Engineer currently focusing on creating quality, user-centered digital experiences. </p>
+					<h1>
+						Hi, I'm Teresa <Icon icon="emojione:hand-with-fingers-splayed" />{" "}
+					</h1>
+					<p>
+						A passionate Front End Engineer currently focusing on creating
+						quality, user-centered digital experiences.{" "}
+					</p>
 				</div>
-				<IconsContainer >
+				<IconsContainer>
 					<a href="https://github.com/teresafranxman97">
 						<Icon className="icon" icon="codicon:github-alt" width={20} />
 					</a>
@@ -28,9 +33,11 @@ const Landing = () => {
 						<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
 					</a>
 				</IconsContainer>
-				<Arrow>
-					<Icon className="arrow" icon="bytesize:arrow-bottom" width={50} />
-				</Arrow>
+				<Button
+					content="Get to know me"
+					link="/about"
+					primary="true"
+				></Button>
 			</Container>
 			<Projects />
 			<Services />
@@ -39,6 +46,6 @@ const Landing = () => {
 			<Contact />
 		</Styled>
 	);
-}
+};
 
 export default Landing;
