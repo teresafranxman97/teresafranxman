@@ -82,6 +82,8 @@ const Label = styled.div`
 
 	input[type="text"] {
 		border: none;
+		height: 100%;
+		width: 100%;
 		background: transparent;
 		color: #928ab2;
 
