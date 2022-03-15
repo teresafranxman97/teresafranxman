@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
-const Styles = styled.div `
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`
+const Styles = styled.div`
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media (max-width: 480px) {
+		padding: 10vh 0;
+	}
+`;
 
 const ContentContainer = styled.div`
 	display: grid;
 	gap: 1rem;
+	margin-top: 1rem;
 
 	img {
 		width: 100%;

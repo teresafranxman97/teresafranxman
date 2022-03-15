@@ -7,10 +7,10 @@ import {
 	IconContainer,
 	TextContainer,
 	Label,
-	Container
-} from '../Styles/Sections/ContactStyles';
+	Container,
+} from "../Styles/Sections/ContactStyles";
 import { Icon } from "@iconify/react";
-import Title from '../Components/Title';
+import Title from "../Components/Title";
 
 function Contact() {
 	const [toSend, setToSend] = useState({
@@ -31,8 +31,8 @@ function Contact() {
 			user_name: "",
 			user_email: "",
 			message: "",
-		})
-	}
+		});
+	};
 
 	const onSubmit = (e) => {
 		e.preventDefault();
@@ -44,23 +44,23 @@ function Contact() {
 		)
 			.then((res) => {
 				console.log("Success!", res.status, res.text, res);
-				alert("Your message was sent successfully!")
+				alert("Your message was sent successfully!");
 			})
 			.catch((err) => {
 				console.log("Failed...", err);
 			});
 
-		resetForm()
+		resetForm();
 	};
 
 	return (
 		<ContactStyles>
 			<div className="title-container">
-				<Title
-					title="	Get in touch"
-				>
-				</Title>
-				<p>Interested in discussing an idea or have a question? Shoot me a message and I’ll get back to you as soon as possible.</p>
+				<Title title="	Get in touch"></Title>
+				<p>
+					Interested in discussing an idea or have a question? <br />
+					Shoot me a message and I’ll get back to you as soon as possible.
+				</p>
 			</div>
 			<Container>
 				<FormContainer>
@@ -87,7 +87,7 @@ function Contact() {
 								/>
 							</Label>
 						</TextContainer>
-						<div className="textarea"> 
+						<div className="textarea">
 							<textarea
 								required
 								name="message"
