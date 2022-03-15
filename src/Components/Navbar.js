@@ -1,19 +1,36 @@
 import React, { useState } from "react";
-import {NavStyles, Menu, MenuLink, Logo, Hamburger} from "../Styles/Components/navbar-styles";
-import { Link } from 'react-router-dom';
+import {
+	NavStyles,
+	Menu,
+	MenuLink,
+	Logo,
+	Hamburger,
+} from "../Styles/Components/navbar-styles";
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<NavStyles isOpen={isOpen} >
+		<NavStyles isOpen={isOpen}>
 			<Logo>
 				<Link to="/teresafranxman">teresa.</Link>
-			</Logo>		
-			<Hamburger onClick={() => setIsOpen(!isOpen)} >
-				<span />
-				<span />
-				<span />
+			</Logo>
+			<Hamburger onClick={() => setIsOpen(!isOpen)}>
+				{isOpen ? (
+					<Icon
+						style={{ color: "white", marginRight: "1rem" }}
+						icon="ep:close-bold"
+						width={30}
+					/>
+				) : (
+					<Icon
+						style={{ color: "#3F3565" }}
+						icon="heroicons-solid:menu-alt-1"
+						width={30}
+					/>
+				)}
 			</Hamburger>
 			<Menu isOpen={isOpen}>
 				<MenuLink>
@@ -28,7 +45,7 @@ function Navbar() {
 				<MenuLink>
 					<Link to="/projects">Projects</Link>
 				</MenuLink>
-				<MenuLink >
+				<MenuLink>
 					<Link to="/contact">Contact</Link>
 				</MenuLink>
 			</Menu>

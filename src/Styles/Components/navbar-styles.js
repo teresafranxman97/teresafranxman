@@ -23,23 +23,15 @@ const NavStyles = styled.div`
 	}
 `;
 
-const Hamburger = styled.div `
+const Hamburger = styled.div`
 	display: none;
 	flex-direction: column;
 	cursor: pointer;
 
-	span {
-		height: 2px;
-		width: 25px;
-		background: #3F3565;	
-		margin-bottom: 4px;
-		border-radius: 5px;
-	}
-
 	@media (max-width: 768px) {
 		display: flex;
 	}
-`
+`;
 
 const Menu = styled.div `
 	display: flex;

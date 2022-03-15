@@ -8,28 +8,28 @@ const Styles = styled.div `
 `
 
 const ContentContainer = styled.div`
-    display: grid;
-    gap: 1rem;
+	display: grid;
+	gap: 1rem;
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+	img {
+		width: 100%;
+		height: 100%;
+	}
 
-    p {
-        margin: 0;
-        font-size: clamp(.75rem, 1vw, 1rem);
-    }
+	p {
+		margin: 0;
+		font-size: clamp(0.85rem, 1vw, 1.5rem);
+	}
 
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
 
-    @media (min-width: 480px) {
-        img {
-            height: 50vh;
-        }
-    }
-`
+	@media (min-width: 480px) {
+		img {
+			height: 50vh;
+		}
+	}
+`;
 export { Styles, ContentContainer };
