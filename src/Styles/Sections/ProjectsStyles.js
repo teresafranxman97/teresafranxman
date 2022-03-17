@@ -7,56 +7,47 @@ const ProjectsStyles = styled.div`
 	justify-content: center;
 	padding: 10vh 0;
 
-	.project-container {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		gap: 4rem;
-		margin-top: 3vh;
-	}
-
-	a {
-		text-decoration: none;
-		color: white;
-		font-weight: 800;
-	}
-
-	img {
-		width: 100%;
-		background-color: rgb(247 247 247);
-	}
-
-	p {
-		margin: 0;
-		font-size: 18px;
-		font-weight: bold;
-		color: #3F3565;
-	}
-
-	.info-container {
-		display: flex;
-		flex-direction: column;
-		width: 40vw;
-	}
-
-	@media (min-width: 1023px) {
-		display: flex; 
-		flex-direction: column;
-
-		img {
-			height: 55vh;
-		}
-	}
-
-	@media (min-width: 768px) {
-		.project-container {
-			grid-template-columns: repeat(2, 1fr);
-			gap: 1rem;
-		}
-	}
-
 	@media (max-width: 1023px) {
 		padding: 10vh 0;
 	}
 `;
 
-export default ProjectsStyles;
+const Content = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0 1rem;
+
+	h1 {
+		font-size: clamp(1rem, 2vw, 2rem);
+	}
+
+	p {
+		font-size: clamp(0.85rem, 1vw, 1rem);
+	}
+
+	@media (min-width: 768px) {
+		width: 50vw;
+		padding: 0 3rem;
+	}
+`;
+
+const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #3f3565;
+	color: #fffdfd;
+	margin: 1rem 0;
+	padding: 1rem;
+
+	img {
+		width: 300px;
+	}
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+`;
+
+export { ProjectsStyles, Content, Container };

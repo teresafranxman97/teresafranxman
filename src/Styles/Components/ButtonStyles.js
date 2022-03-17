@@ -1,7 +1,6 @@
-import styled, { css } from 'styled-components';
-import { motion } from 'framer-motion/dist/framer-motion';
+import styled from 'styled-components';
 
-const ButtonStyles = styled(motion.div)`
+const ButtonStyles = styled.div`
 	background: transparent;
 	border: 1px solid ${(props) => props.theme.main};
 	cursor: pointer;

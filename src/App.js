@@ -15,12 +15,12 @@ function App() {
 			<Navbar />	
 
 			<Routes>
-				<Route exact path="/teresafranxman" element={<Landing />} />
-				<Route path="/services" element={<Services />} />
-				<Route path="/tools" element={<Tools />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
+				<Route exact path="/" element={<Landing />} />
+				<Route path="services" element={<Services />} />
+				<Route path="tools" element={<Tools />} />
+				<Route path="projects" element={<Projects />} />
+				<Route path="about" element={<About />} />
+				<Route path="contact" element={<Contact />} />
 			</Routes>
 		</AppStyles>
 	);

@@ -8,18 +8,18 @@ const About = () => {
 		<Styles>
 			<Title title="Get to know me"></Title>
 			<ContentContainer>
-				<img src={image} alt="teresa-image" />
+				<img src={image} alt="teresa" />
 				<p>
-					Hello again! <br />
-					I’m Teresa Franxman, a Front End Engineer who’s specializing in the
-					development of quality user-centered digital experiences. With a
-					passion for designing products that focus on user usability, I aim to
-					deliver effective, accessible and sophisticated web applications. As a
-					recent graduate of Bloom Institute of Technology I have many valuable
-					skills in web design, object-oriented programming, computer science as
-					well as how to efficiently work within a cross functional team of
-					individuals. Though I am now a proud graduate, I am eager to continue
-					expanding my knowledge of web design and development.
+					Hello again! <br />I am Teresa Franxman, a Front End Engineer
+					specializing in the development of quality user-centered digital
+					experiences. With a passion for designing products that focus on
+					usability, I aim to deliver effective, accessible as well as
+					responsive sophisticated web applications. As a recent graduate of
+					Bloom Institute of Technology I have many valuable skills in web
+					design, object-oriented programming, computer science fundamentals and
+					how to efficiently work within a cross functional team of individuals
+					in a remote setting. Though I am now a proud graduate, I am eager to
+					continue expanding my knowledge of web design and development.
 				</p>
 			</ContentContainer>
 		</Styles>

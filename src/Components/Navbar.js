@@ -15,7 +15,7 @@ function Navbar() {
 	return (
 		<NavStyles isOpen={isOpen}>
 			<Logo>
-				<Link to="/teresafranxman">teresa.</Link>
+				<Link to="/">teresa</Link>
 			</Logo>
 			<Hamburger onClick={() => setIsOpen(!isOpen)}>
 				{isOpen ? (

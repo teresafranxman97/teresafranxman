@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion/dist/framer-motion";
 
 const Container = styled.div`
     display: flex;
@@ -30,7 +29,7 @@ const Container = styled.div`
     }
 `
 
-const Content = styled(motion.div) `
+const Content = styled.div `
     display: flex;
     flex-direction: column;
     align-items: left;

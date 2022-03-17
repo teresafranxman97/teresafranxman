@@ -62,6 +62,8 @@ const StyledTools = styled.div`
 	}
 
 	@media (max-width: 480px) {
+		padding: 10vh 0;
+
 		.content-grid {
 			grid-template-columns: repeat(2, 1fr);
 		}

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion/dist/framer-motion";
 
 const Styled = styled.div``;
 
@@ -46,6 +45,4 @@ const IconsContainer = styled.div`
 	}
 `;
 
-const Arrow = styled(motion.div)``;
-
-export { Styled, Container, IconsContainer, Arrow };
+export { Styled, Container, IconsContainer };
