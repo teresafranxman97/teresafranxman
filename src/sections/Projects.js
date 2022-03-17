@@ -75,7 +75,6 @@ const Projects = () => {
 			{modal ? (
 				<div className={modal ? "modal open" : "modal"}>
 					<Icon icon="ci:close-small" onClick={() => setModal(false)} />
-					<img src={imgSrc} alt="img" />
 					<Title title={title}></Title>
 					<h3>{position}</h3>
 					<p>{description}</p>

@@ -12,6 +12,13 @@ const ProjectsStyles = styled.div`
 		height: auto;
 		display: block;
 	}
+
+	.modal, open {
+		position: fixed;
+		background: ghostwhite;
+		padding: 1rem;
+		top: 12rem;
+	}
 `;
 
 const ContentGrid = styled.div`
