@@ -1,24 +1,97 @@
 import React, { useState } from "react";
-import {ProjectsStyles, Content, Container} from "../Styles/Sections/ProjectsStyles";
+import {
+	ProjectsStyles,
+	ContentGrid,
+	Container,
+} from "../Styles/Sections/ProjectsStyles";
 import data from "../DataFiles/data";
 import Title from "../Components/Title";
+import { Icon } from "@iconify/react";
 
 const Projects = () => {
 	const [projects] = useState(data);
+	const [modal, setModal] = useState(false);
+	const [imgSrc, setImgSrc] = useState("");
+	const [title, setTitle] = useState("");
+	const [description, setDescription] = useState("");
+	const [position, setPosition] = useState("");
+	const [stack, setStack] = useState("");
+	const [site, setSite] = useState("");
+	const [githubLink, setGithubLink] = useState("");
+
+	const getImg = (src) => {
+		setImgSrc(src);
+		setModal(true);
+	};
+
+	const getTitle = (title) => {
+		setTitle(title);
+	};
+
+	const getDescription = (description) => {
+		setDescription(description);
+	};
+
+	const getPosition = (position) => {
+		setPosition(position);
+	};
+
+	const getStack = (stack) => {
+		setStack(stack);
+	};
+
+	const getSite = (site) => {
+		setSite(site);
+	};
+
+	const getGithubLink = (githubLink) => {
+		setGithubLink(githubLink);
+	};
 
 	return (
 		<ProjectsStyles>
 			<Title title="My work"></Title>
-				{projects.map((project) => (
-					<Container className="project-content" key={project.id}>
-						<img src={project.src} alt={project.alt} />
-						<Content>
-							<h1>{project.title}</h1>
-							<p>{project.description}</p>
-							<h4>{project.stack}</h4>
-						</Content>
-					</Container>
-				))}
+			<ContentGrid>
+				{projects.map((project, index) => {
+					return (
+						<Container
+							className="project-img"
+							key={index}
+							onClick={() => {
+								getImg(project.src);
+								getTitle(project.title);
+								getDescription(project.description);
+								getPosition(project.position);
+								getStack(project.stack);
+								getSite(project.site);
+								getGithubLink(project.githubLink);
+							}}
+						>
+							<img src={project.src} alt={project.alt} />
+						</Container>
+					);
+				})}
+			</ContentGrid>
+			{modal ? (
+				<div className={modal ? "modal open" : "modal"}>
+					<Icon icon="ci:close-small" onClick={() => setModal(false)} />
+					<img src={imgSrc} alt="img" />
+					<Title title={title}></Title>
+					<h3>{position}</h3>
+					<p>{description}</p>
+					<h4>{stack}</h4>
+					<div className="icons">
+						<a href={githubLink}>
+							<Icon icon="codicon:github-alt" className="icon" />
+						</a>
+						<a href={site}>
+							<Icon icon="dashicons:admin-site-alt3" className="icon" />
+						</a>
+					</div>
+				</div>
+			) : (
+				""
+			)}
 		</ProjectsStyles>
 	);
 };
