@@ -62,12 +62,9 @@ const MenuLink = styled.div `
 `
 const Logo = styled.div `
 	padding: 1rem 0;
-	font-weight: 800;
-	font-size: 2rem;
 	
-	a {
-		color: #3F3565;	
-		font-size: 25px;
+	img {
+		margin-top: 1rem;
 	}
 `
 

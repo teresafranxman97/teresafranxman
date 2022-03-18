@@ -81,11 +81,6 @@ const data = [
 		icon: "akar-icons:vscode-fill",
 		title: "VSCode"
 	},
-	{
-		id: 18,
-		icon: "dashicons:rest-api",
-		title: "Rest API"
-	}
 ];
 
 export default data;

@@ -81,10 +81,20 @@ const Projects = () => {
 					<h4>{stack}</h4>
 					<div className="icons">
 						<a href={githubLink}>
-							<Icon icon="codicon:github-alt" className="icon" />
+							<Icon
+								icon="codicon:github-alt"
+								style={{ color: "#3f3565", marginRight: "1rem" }}
+								className="icon"
+								width={25}
+							/>
 						</a>
 						<a href={site}>
-							<Icon icon="dashicons:admin-site-alt3" className="icon" />
+							<Icon
+								icon="foundation:page-export"
+								style={{ color: "#3f3565" }}
+								className="icon"
+								width={25}
+							/>
 						</a>
 					</div>
 				</div>

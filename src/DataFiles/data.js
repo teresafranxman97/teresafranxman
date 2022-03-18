@@ -1,5 +1,6 @@
 import clone from "../images/googleclone.png";
 import underdogdevs from "../images/underdogdevs.png";
+import logo from "../images/Original on Transparent.png";
 
 const data = [
 	{
@@ -19,30 +20,21 @@ const data = [
 		title: "Underdog Devs",
 		position: "UI/UX Engineer",
 		description:
-			"As a lead UI/UX Engineer I conducted research pertaining to the users experience. Following the completetion of my research, I created wireframes for every necessary page of the application. Finally, utilzing Ant Design, we built the necessary components and styled them.",
+			"A web app that was developed to help aspiring developers of disadvantaged backgrounds make their transition into the tech field. Underdog Devs provides a 'go at your own pace' program that connects future devs(mentees) with industry experts (mentors) where they can learn the skills required to become a successful developer.",
 		stack: "React, Ant Design, Node.Js, Heroku, Okta",
 		site: "",
 		githubLink: "https://github.com/BloomTech-Labs/underdog-devs-fe-a",
 	},
 	{
 		id: 2,
-		src: `${underdogdevs}`,
+		src: `${logo}`,
 		title: "Personal Portfolio",
 		position: "Front End Developer",
-		description: "I created my personal portfolio completely from scratch",
+		description:
+			"Designed in figma then brought to life with React and Styled Components, my personal portfolio website is a fully front end application developed to showcase my skills as well as my knowledge of web design and development. ",
 		stack: "React, Styled-Components, Netlify, Github Pages",
 		site: "https://teresafranxman.com/",
 		githubLink: "https://github.com/teresafranxman97/teresafranxman",
-	},
-	{
-		id: 2,
-		src: `${underdogdevs}`,
-		title: "Teresa Talks",
-		position: "Front End Developer",
-		description: "I created my personal portfolio completely from scratch",
-		stack: "React, Styled-Components, Netlify, Github Pages",
-		site: "/",
-		githubLink: "https://github.com/teresafranxman97/Teresa-Talks",
 	},
 ];
 

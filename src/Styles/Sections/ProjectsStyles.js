@@ -13,11 +13,20 @@ const ProjectsStyles = styled.div`
 		display: block;
 	}
 
-	.modal, open {
+	.modal,
+	open {
 		position: fixed;
 		background: ghostwhite;
 		padding: 1rem;
 		top: 12rem;
+		color: #3f3565;
+	}
+
+	@media (min-width: 768px) {
+		.modal,
+		open {
+			width: 50vw;
+		}
 	}
 `;
 
@@ -25,6 +34,7 @@ const ContentGrid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	gap: 1rem;
+	margin-top: 2rem;
 
 	@media (min-width: 768px) {
 		grid-template-columns: repeat(2, 1fr);
@@ -32,7 +42,7 @@ const ContentGrid = styled.div`
 `;
 
 const Container = styled.div`
-	background: #3f3565;
+	background: #544786;
 	color: #fffdfd;
 	padding: 1rem;
 
@@ -42,7 +52,7 @@ const Container = styled.div`
 
 	@media (min-width: 768px) {
 		img {
-			width: 300px;
+			width: 50%;
 		}
 	}
 `;

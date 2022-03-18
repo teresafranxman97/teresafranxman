@@ -8,6 +8,7 @@ import {
 } from "../Styles/Components/navbar-styles";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import logo from "../images/Original on Transparent.png";
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,9 @@ function Navbar() {
 	return (
 		<NavStyles isOpen={isOpen}>
 			<Logo>
-				<Link to="/">teresa</Link>
+				<Link to="/">
+					<img src={logo} alt="logo" width={35} />
+				</Link>
 			</Logo>
 			<Hamburger onClick={() => setIsOpen(!isOpen)}>
 				{isOpen ? (
