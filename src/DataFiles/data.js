@@ -10,7 +10,7 @@ const data = [
 		position: "Front End Developer",
 		description:
 			"With the power of HTML and CSS, I created a functional clone of Googles very own search, image search and advanced search webpages.  This site allows for simple to advanced searches that contain specific filters.",
-		stack: "CSS, HTML, JavaScript",
+		stack: "CSS, HTML",
 		site: "https://teresafranxman97.github.io/google-clone.github.io/",
 		githubLink: "https://teresafranxman97.github.io/google-clone.github.io/",
 	},
