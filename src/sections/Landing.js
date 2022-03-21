@@ -14,7 +14,7 @@ import { Icon } from "@iconify/react";
 
 const Landing = () => {
 	return (
-		<Styled>
+		<Styled id="/">
 			<Container>
 				<div className="content">
 					<h1>
@@ -35,8 +35,8 @@ const Landing = () => {
 				</IconsContainer>
 				<Button
 					content="Get to know me"
-					link="/about"
-					primary="true"
+					link="#about"
+					primary="false"
 				></Button>
 			</Container>
 			<Projects />

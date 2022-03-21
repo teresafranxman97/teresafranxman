@@ -8,7 +8,7 @@ const Tools = () => {
 	const [skills] = useState(data);
 
 	return (
-		<StyledTools>
+		<StyledTools id="tools">
 			<div className="title-container">
 				<Title title="Toolkit"></Title>
 				<p>

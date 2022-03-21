@@ -49,7 +49,7 @@ const Projects = () => {
 	};
 
 	return (
-		<ProjectsStyles>
+		<ProjectsStyles id="projects" >
 			<Title title="My work"></Title>
 			<ContentGrid>
 				{projects.map((project, index) => {

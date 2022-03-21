@@ -5,7 +5,7 @@ import image from "../images/me.jpg";
 
 const About = () => {
 	return (
-		<Styles>
+		<Styles id="about">
 			<Title title="Get to know me"></Title>
 			<ContentContainer>
 				<img src={image} alt="teresa" />

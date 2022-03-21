@@ -6,7 +6,8 @@ import {
 	Logo,
 	Hamburger,
 } from "../Styles/Components/navbar-styles";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import { Icon } from "@iconify/react";
 import logo from "../images/Original on Transparent.png";
 
@@ -16,7 +17,7 @@ function Navbar() {
 	return (
 		<NavStyles isOpen={isOpen}>
 			<Logo>
-				<Link to="/">
+				<Link smooth to="#/">
 					<img src={logo} alt="logo" width={35} />
 				</Link>
 			</Logo>
@@ -37,19 +38,19 @@ function Navbar() {
 			</Hamburger>
 			<Menu isOpen={isOpen}>
 				<MenuLink>
-					<Link to="/tools">Tools</Link>
+					<Link smooth to="#tools">Tools</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link to="/services">Services</Link>
+					<Link smooth to="#services">Services</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link to="/about">About</Link>
+					<Link smooth to="#about">About</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link to="/projects">Projects</Link>
+					<Link smooth to="#projects">Projects</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link to="/contact">Contact</Link>
+					<Link smooth to="#contact">Contact</Link>
 				</MenuLink>
 			</Menu>
 		</NavStyles>

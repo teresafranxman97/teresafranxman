@@ -13,7 +13,7 @@ function App() {
 	return (
 		<AppStyles>
 			<Navbar />	
-		
+
 
 			<Routes>
 				<Route exact path="/" element={<Landing />} />

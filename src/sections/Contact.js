@@ -54,7 +54,7 @@ function Contact() {
 	};
 
 	return (
-		<ContactStyles>
+		<ContactStyles id="contact">
 			<div className="title-container">
 				<Title title="	Get in touch"></Title>
 				<p>
