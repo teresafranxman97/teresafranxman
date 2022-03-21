@@ -13,12 +13,13 @@ function App() {
 	return (
 		<AppStyles>
 			<Navbar />	
+		
 
 			<Routes>
 				<Route exact path="/" element={<Landing />} />
 				<Route path="services" element={<Services />} />
 				<Route path="tools" element={<Tools />} />
-				<Route path="projects" element={<Projects />} />
+				<Route path="projects" element={<Projects />} /> 
 				<Route path="about" element={<About />} />
 				<Route path="contact" element={<Contact />} />
 			</Routes>

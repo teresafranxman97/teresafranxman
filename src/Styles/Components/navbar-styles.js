@@ -43,7 +43,7 @@ const Menu = styled.div `
 		overflow: hidden;
 		flex-direction: column;
 		max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
-		transition: max-height 0.3s ease-in;
+		transition: ${({isOpen}) => (isOpen ? 'max-height 0.3s ease-in' : '0s ease-out')};
 		min-width: 100vw;
 	}
 `
