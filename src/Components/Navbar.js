@@ -6,7 +6,6 @@ import {
 	Logo,
 	Hamburger,
 } from "../Styles/Components/navbar-styles";
-// import { Link } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
 import { Icon } from "@iconify/react";
 import logo from "../images/Original on Transparent.png";
@@ -18,7 +17,7 @@ function Navbar() {
 		<NavStyles isOpen={isOpen}>
 			<Logo>
 				<Link smooth to="#/">
-					<img src={logo} alt="logo" width={35} />
+					<img className="logo" src={logo} alt="logo" width={40} />
 				</Link>
 			</Logo>
 			<Hamburger onClick={() => setIsOpen(!isOpen)}>

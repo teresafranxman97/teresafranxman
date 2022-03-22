@@ -8,9 +8,9 @@ const NavStyles = styled.div`
 	flex-wrap: wrap;
 	position: fixed;
 	top: 0;
-	left: ${({isOpen}) => (isOpen ? "0" : "1rem" )};
-    right: ${({isOpen}) => (isOpen ? "0" : "1rem" )};
-	
+	left: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
+	right: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
+
 	a {
 		color: ${({ isOpen }) => (isOpen ? "white" : "#A8A7AC")};
 		text-decoration: none;
@@ -18,8 +18,8 @@ const NavStyles = styled.div`
 	}
 
 	@media (min-width: 769px) {
-		left: ${({isOpen}) => (isOpen ? "0" : "13vw" )};
-		right: ${({isOpen}) => (isOpen ? "0" : "13vw" )};
+		left: ${({ isOpen }) => (isOpen ? "0" : "13vw")};
+		right: ${({ isOpen }) => (isOpen ? "0" : "13vw")};
 	}
 `;
 
@@ -33,7 +33,7 @@ const Hamburger = styled.div`
 	}
 `;
 
-const Menu = styled.div `
+const Menu = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: right;
@@ -43,29 +43,28 @@ const Menu = styled.div `
 		overflow: hidden;
 		flex-direction: column;
 		max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
-		transition: ${({isOpen}) => (isOpen ? 'max-height 0.3s ease-in' : '0s ease-out')};
+		transition: ${({ isOpen }) =>
+			isOpen ? "max-height 0.3s ease-in" : "0s ease-out"};
 		min-width: 100vw;
 	}
-`
+`;
 
-const MenuLink = styled.div `
+const MenuLink = styled.div`
 	padding: 1rem;
 	cursor: pointer;
 	text-align: center;
 	font-weight: 400;
 	transition: all 0.3s ease-in;
-	
-	&:hover {
-		color: #FF781F;
-	}
 
-`
-const Logo = styled.div `
-	padding: 1rem 0;
-	
+	&:hover {
+		color: #ff781f;
+	}
+`;
+const Logo = styled.div`
 	img {
+		margin-left: ${({ isOpen }) => (isOpen ? "1rem" : "")};
 		margin-top: 1rem;
 	}
-`
+`;
 
-export { NavStyles, Hamburger, Menu, MenuLink, Logo};
+export { NavStyles, Hamburger, Menu, MenuLink, Logo };

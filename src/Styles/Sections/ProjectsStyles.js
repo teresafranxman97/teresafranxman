@@ -36,7 +36,7 @@ const ContentGrid = styled.div`
 	gap: 1rem;
 	margin-top: 2rem;
 
-	@media (min-width: 768px) {
+	@media (min-width: 480px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
 `;
