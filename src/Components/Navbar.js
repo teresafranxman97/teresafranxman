@@ -37,16 +37,16 @@ function Navbar() {
 			</Hamburger>
 			<Menu isOpen={isOpen}>
 				<MenuLink>
-					<Link smooth to="#tools">Tools</Link>
+					<Link smooth to="#projects">Projects</Link>
 				</MenuLink>
 				<MenuLink>
 					<Link smooth to="#services">Services</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link smooth to="#about">About</Link>
+					<Link smooth to="#tools">Tools</Link>
 				</MenuLink>
 				<MenuLink>
-					<Link smooth to="#projects">Projects</Link>
+					<Link smooth to="#about">About</Link>
 				</MenuLink>
 				<MenuLink>
 					<Link smooth to="#contact">Contact</Link>

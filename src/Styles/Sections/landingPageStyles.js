@@ -7,31 +7,44 @@ const Container = styled.div`
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+	align-items: center;
 
 	h1 {
-		margin: 0;
-		font-size: clamp(1rem, 2.5vw, 1.5rem);
-		font-weight: 400;
-		color: #3f3565;
+		font-size: 30px;
+		font-family: prata;
 	}
 
 	p {
-		font-size: clamp(1.25rem, 2.5vw, 3rem);
-		font-weight: 800;
-		margin: 0;
-		color: #3f3565;
+		font-size: 14px;
 	}
 
-	.arrow {
-		position: absolute;
-		bottom: 1rem;
-		left: 49vw;
-		color: #3f3565;
+	.img-container {
+		height: 54%;
 	}
 
-	@media (min-width: 769px) {
-		p {
+	img {
+		width: 100%;
+		height: 70vh;
+	}
+
+	.content {
+		height: 50vh;
+	}
+
+	@media (min-width: 1023px) {
+		flex-flow: row-reverse;
+
+		.img-container {
 			width: 60vw;
+			height: 100vh;
+		}
+
+		img {
+			height: 100%;
+		}
+
+		.content {
+			width: 50vw;
 		}
 	}
 `;
@@ -40,7 +53,6 @@ const IconsContainer = styled.div`
 	margin-top: 1rem;
 
 	a {
-		color: #3f3565;
 		margin-right: 1rem;
 	}
 `;

@@ -6,14 +6,14 @@ const Styles = styled.div`
 	flex-direction: column;
 	justify-content: center;
 
-	@media (max-width: 480px) {
+	@media (max-width: 768px) {
 		padding: 10vh 0;
 	}
 `;
 
 const ContentContainer = styled.div`
-	display: grid;
-	gap: 1rem;
+	display: flex;
+	flex-direction: column;
 	margin-top: 1rem;
 
 	img {
@@ -27,13 +27,11 @@ const ContentContainer = styled.div`
 	}
 
 	@media (min-width: 768px) {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 2rem;
-	}
-
-	@media (min-width: 480px) {
+		flex-direction: row;
+		
 		img {
-			height: 50vh;
+			height: 350px;
+			width: 350px;
 		}
 	}
 `;

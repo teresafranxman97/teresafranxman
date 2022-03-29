@@ -7,6 +7,12 @@ const ProjectsStyles = styled.div`
 	justify-content: center;
 	padding: 10vh 0;
 
+	.modal {
+		:hover {
+			cursor: pointer;
+		}
+	}
+
 	.modal img {
 		width: 40vw;
 		height: auto;
@@ -16,17 +22,21 @@ const ProjectsStyles = styled.div`
 	.modal,
 	open {
 		position: fixed;
-		background: ghostwhite;
-		padding: 1rem;
-		top: 12rem;
-		color: #3f3565;
+		background: #8b8b8b;
+		/* padding: 1rem; */
+		top: 0;
+		bottom: 0;
+		right: 0;
+		/* width: 100vw; */
+		left: 0;
 	}
 
-	@media (min-width: 768px) {
-		.modal,
-		open {
-			width: 50vw;
-		}
+	.modal-content {
+		background: aliceblue;
+		/* width: 71vw; */
+		height: 50vh;
+		position: absolute;
+		top: 20vh;
 	}
 `;
 
@@ -36,24 +46,23 @@ const ContentGrid = styled.div`
 	gap: 1rem;
 	margin-top: 2rem;
 
+	:hover {
+		cursor: pointer;
+	}
+
 	@media (min-width: 480px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
 `;
 
 const Container = styled.div`
-	background: #544786;
-	color: #fffdfd;
-	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 
 	img {
-		width: 100%;
-	}
-
-	@media (min-width: 768px) {
-		img {
-			width: 50%;
-		}
+		width: 200px;
 	}
 `;
 

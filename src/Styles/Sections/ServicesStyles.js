@@ -5,7 +5,6 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 100vh;
-    padding: 10vh 0;
 
     h1 {
         margin: 5px 0;
@@ -26,6 +25,10 @@ const Container = styled.div`
         .header {
             width: 50vw;
         }
+    }
+
+    @media (max-width: 768px) {
+        padding: 10vh 0;
     }
 `
 

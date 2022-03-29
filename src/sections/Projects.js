@@ -6,7 +6,7 @@ import {
 } from "../Styles/Sections/ProjectsStyles";
 import data from "../DataFiles/data";
 import Title from "../Components/Title";
-import { Icon } from "@iconify/react";
+import Modal from "../Components/Modal";
 
 const Projects = () => {
 	const [projects] = useState(data);
@@ -49,7 +49,7 @@ const Projects = () => {
 	};
 
 	return (
-		<ProjectsStyles id="projects" >
+		<ProjectsStyles id="projects">
 			<Title title="My work"></Title>
 			<ContentGrid>
 				{projects.map((project, index) => {
@@ -67,37 +67,25 @@ const Projects = () => {
 								getGithubLink(project.githubLink);
 							}}
 						>
-							<img src={project.src} alt={project.alt} />
+							<div className="img-container">
+								<img src={project.src} alt={project.alt} />
+							</div>
+							<p>{project.title}</p>
 						</Container>
 					);
 				})}
 			</ContentGrid>
 			{modal ? (
-				<div className={modal ? "modal open" : "modal"}>
-					<Icon icon="ci:close-small" onClick={() => setModal(false)} />
-					<Title title={title}></Title>
-					<h3>{position}</h3>
-					<p>{description}</p>
-					<h4>{stack}</h4>
-					<div className="icons">
-						<a href={githubLink}>
-							<Icon
-								icon="codicon:github-alt"
-								style={{ color: "#3f3565", marginRight: "1rem" }}
-								className="icon"
-								width={25}
-							/>
-						</a>
-						<a href={site}>
-							<Icon
-								icon="foundation:page-export"
-								style={{ color: "#3f3565" }}
-								className="icon"
-								width={25}
-							/>
-						</a>
-					</div>
-				</div>
+				<Modal
+					modal={modal}
+					setModal={setModal}
+					title={title}
+					position={position}
+					description={description}
+					stack={stack}
+					githubLink={githubLink}
+					site={site}
+				/>
 			) : (
 				""
 			)}

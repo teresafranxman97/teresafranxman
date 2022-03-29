@@ -18,8 +18,8 @@ const NavStyles = styled.div`
 	}
 
 	@media (min-width: 769px) {
-		left: ${({ isOpen }) => (isOpen ? "0" : "13vw")};
-		right: ${({ isOpen }) => (isOpen ? "0" : "13vw")};
+		left: ${({ isOpen }) => (isOpen ? "0" : "10vw")};
+		right: ${({ isOpen }) => (isOpen ? "0" : "10vw")};
 	}
 `;
 

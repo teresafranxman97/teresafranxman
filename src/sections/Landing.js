@@ -11,33 +11,37 @@ import {
 	IconsContainer,
 } from "../Styles/Sections/landingPageStyles";
 import { Icon } from "@iconify/react";
+import abstract from "../images/purpleabstract.png";
 
 const Landing = () => {
 	return (
 		<Styled id="/">
 			<Container>
-				<div className="content">
-					<h1>
-						Hi, I'm Teresa <Icon icon="emojione:hand-with-fingers-splayed" />{" "}
-					</h1>
-					<p>
-						A passionate Front End Engineer currently focusing on creating
-						quality, user-centered digital experiences.{" "}
-					</p>
+				<div className="img-container">
+					<img src={abstract} alt="purple abstract geometric shapes" />
 				</div>
-				<IconsContainer>
+				<div className="content">
+					<h1>Hi, I'm Teresa</h1>
+					<p>
+						I am a Front End Developer currently focusing on building quality
+						digital experiences. With a love for design and a passion for
+						building products that are accessible to all, I aim to deliever
+						wonderful user-centered web applications.
+					</p>
+					<Button
+						content="Get to know me"
+						link="#about"
+						primary="false"
+					></Button>
+				</div>
+				{/* <IconsContainer>
 					<a href="https://github.com/teresafranxman97">
 						<Icon className="icon" icon="codicon:github-alt" width={20} />
 					</a>
 					<a href="https://linkedin.com/in/teresa-franxman">
 						<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
 					</a>
-				</IconsContainer>
-				<Button
-					content="Get to know me"
-					link="#about"
-					primary="false"
-				></Button>
+				</IconsContainer> */}
 			</Container>
 			<Projects />
 			<Services />

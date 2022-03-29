@@ -6,7 +6,7 @@ const ContactMe = () => {
 	return (
 		<ContactMeStyles>
 			<p>Have an idea you want to discuss? Send me a message! </p>
-			<Button content="Contact me" link="/contact" primary="true"></Button>
+			<Button content="Contact me" link="#contact" primary="true"></Button>
 		</ContactMeStyles>
 	);
 };
