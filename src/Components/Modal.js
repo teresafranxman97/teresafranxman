@@ -1,11 +1,10 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import Title from "./Title";
+import { ModalStyles, ModalContent } from "../Styles/Components/ModalStyles";
 
 const Modal = ({
 	modal,
 	setModal,
-	title,
 	position,
 	description,
 	stack,
@@ -13,11 +12,11 @@ const Modal = ({
 	site,
 }) => {
 	return (
-		<div
+		<ModalStyles
 			className={modal ? "modal open" : "modal"}
 			onClick={() => setModal(false)}
 		>
-			<div
+			<ModalContent
 				className="modal-content"
 				onClick={(e) => {
 					e.stopPropagation();
@@ -30,10 +29,9 @@ const Modal = ({
 					<Icon
 						icon="ci:close-small"
 						onClick={() => setModal(false)}
-						width={35}
+						width={38}
 					/>
 				</div>
-				<Title title={title}></Title>
 				<h3>{position}</h3>
 				<p>{description}</p>
 				<h4>{stack}</h4>
@@ -41,7 +39,7 @@ const Modal = ({
 					<a href={githubLink}>
 						<Icon
 							icon="codicon:github-alt"
-							style={{ color: "#3f3565", marginRight: "1rem" }}
+							style={{ color: "#FAFBF5", marginRight: "1rem" }}
 							className="icon"
 							width={25}
 						/>
@@ -49,14 +47,14 @@ const Modal = ({
 					<a href={site}>
 						<Icon
 							icon="foundation:page-export"
-							style={{ color: "#3f3565" }}
+							style={{ color: "#FAFBF5" }}
 							className="icon"
 							width={25}
 						/>
 					</a>
 				</div>
-			</div>
-		</div>
+			</ModalContent>
+		</ModalStyles>
 	);
 };
 

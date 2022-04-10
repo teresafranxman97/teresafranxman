@@ -79,7 +79,6 @@ const Projects = () => {
 				<Modal
 					modal={modal}
 					setModal={setModal}
-					title={title}
 					position={position}
 					description={description}
 					stack={stack}

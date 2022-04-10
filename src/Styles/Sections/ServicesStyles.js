@@ -17,7 +17,6 @@ const Container = styled.div`
     }
 
     .header p {
-        color: #3F3565;
         font-size: clamp(.8rem,1vw,2rem);
     }
 
@@ -38,10 +37,7 @@ const Content = styled.div `
     align-items: left;
     text-align: left;
     justify-content: left;
-    border: 3px solid #3F3565;
-    background: #3F3565;
     padding: 1rem;
-    color: #FFFDFD;
     
     p {
         font-size: 12px;

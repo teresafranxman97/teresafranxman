@@ -1,6 +1,5 @@
 import clone from "../images/googleclone.png";
 import underdogdevs from "../images/underdogdevs.png";
-import logo from "../images/Original on Transparent.png";
 
 const data = [
 	{
@@ -24,17 +23,6 @@ const data = [
 		stack: "React, Ant Design, Node.Js, Heroku, Okta",
 		site: "",
 		githubLink: "https://github.com/BloomTech-Labs/underdog-devs-fe-a",
-	},
-	{
-		id: 2,
-		src: `${logo}`,
-		title: "Personal Portfolio",
-		position: "Front End Developer",
-		description:
-			"Designed in figma then brought to life with React and Styled Components, my personal portfolio website is a fully front end application developed to showcase my skills as well as my knowledge of web design and development. ",
-		stack: "React, Styled-Components, Netlify, Github Pages",
-		site: "https://teresafranxman.com/",
-		githubLink: "https://github.com/teresafranxman97/teresafranxman",
 	},
 ];
 

@@ -7,7 +7,13 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         margin: 0;
-        background: #FAFBF5;
+        background: #141424;
+        color: #F9FDF7;
+        font-family: 'Tenor Sans', sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 `;
 

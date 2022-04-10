@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: ${({ isOpen }) => (isOpen ? " #3F3565" : "")};
+	background: ${({ isOpen }) => (isOpen ? "#3F3565" : "")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,14 +12,14 @@ const NavStyles = styled.div`
 	right: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
 
 	a {
-		color: ${({ isOpen }) => (isOpen ? "white" : "#A8A7AC")};
+		color: ${({ isOpen }) => (isOpen ? "white" : "#F9FDF7")};
 		text-decoration: none;
 		font-size: 15px;
 	}
 
 	@media (min-width: 769px) {
-		left: ${({ isOpen }) => (isOpen ? "0" : "10vw")};
-		right: ${({ isOpen }) => (isOpen ? "0" : "10vw")};
+		left: ${({ isOpen }) => (isOpen ? "0" : "4vw")};
+		right: ${({ isOpen }) => (isOpen ? "0" : "4vw")};
 	}
 `;
 

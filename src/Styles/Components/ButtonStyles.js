@@ -1,18 +1,13 @@
 import styled from 'styled-components';
 
 const ButtonStyles = styled.div`
-	background: transparent;
-	border: 1px solid ${(props) => props.theme.main};
+	background: ${(props) => props.theme.main};
 	cursor: pointer;
 	margin: 1rem 0;
 
 	:hover {
 		background: ${(props) => props.theme.main};
 		transition: 0.3s;
-
-		a {
-			color: #fffdfd;
-		}
 	}
 
 	a {
@@ -40,7 +35,7 @@ const ButtonStyles = styled.div`
 
 ButtonStyles.defaultProps = {
 	theme: {
-		main: '#3F3565'
+		main: '#ED7963'
 	}
 }
 
