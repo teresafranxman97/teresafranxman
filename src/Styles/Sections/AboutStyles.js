@@ -55,7 +55,15 @@ const ImageContainer = styled.section`
 		border-right: 3px solid #f05f7e;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 1024px) {
+		width: 40rem;
+	}
+
+	@media screen and (max-width: 800px) {
+		width: 20rem;
+	}
+
+	@media screen and (max-width: 425px) {
 		width: 100%;
 	}
 `;
@@ -73,11 +81,12 @@ const ContentContainer = styled.section`
 
 	.content-wrapper p {
 		font-size: 14px;
+		margin: 0;
 		letter-spacing: 1px;
 		font-weight: 200;
 	}
 
-	@media screen and (min-width: 801px) {
+	@media screen and (min-width: 1024px) {
 		.content-wrapper p {
 			font-size: 16px;
 		}
@@ -91,6 +100,12 @@ const ContentContainer = styled.section`
 	@media screen and (max-width: 800px) {
 		width: 100%;
 	}
+
+	@media screen and (max-width: 300px) {
+		.content-wrapper p {
+			font-size: 12px;
+		}
+	}
 `;
 
 const Wrapper = styled.div`
@@ -101,6 +116,7 @@ const Wrapper = styled.div`
 	@media screen and (max-width: 800px) {
 		flex-direction: column;
 		align-items: center;
+		gap: 1rem;
 	}
 `;
 
