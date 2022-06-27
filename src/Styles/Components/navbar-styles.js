@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: ${({ isOpen }) => (isOpen ? "#3F3565" : "")};
+	background: ${({ isOpen }) => (isOpen ? "#17ADEE" : "")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
 	right: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
@@ -15,6 +15,8 @@ const NavStyles = styled.div`
 		color: ${({ isOpen }) => (isOpen ? "white" : "#F9FDF7")};
 		text-decoration: none;
 		font-size: 15px;
+		font-weight: 200;
+		letter-spacing: 1px;
 	}
 
 	@media (min-width: 769px) {
@@ -36,8 +38,19 @@ const Hamburger = styled.div`
 const Menu = styled.div`
 	display: flex;
 	justify-content: space-between;
-	align-items: right;
 	position: relative;
+	align-items: ${({ isOpen }) => (isOpen ? "" : "baseline")};
+
+	.contact {
+		border: ${({ isOpen }) => (isOpen ? "" : "1px solid #29b4ef")};
+		border-radius: 2px;
+		background: #29b4ef;
+		padding: 0 10px;
+		justify-content: ${({ isOpen }) => (isOpen ? "center" : "")};
+		display: flex;
+		align-items: center;
+		height: 40px;
+	}
 
 	@media (max-width: 768px) {
 		overflow: hidden;

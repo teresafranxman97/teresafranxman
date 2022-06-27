@@ -48,13 +48,13 @@ const data = [
 	},
 	{
 		id: 11,
-		icon: "feather:framer",
-		title: "Framer Motion",
+		icon: "ic:baseline-html",
+		title: "HTML",
 	},
 	{
 		id: 12,
-		icon: "ic:baseline-html",
-		title: "HTML",
+		icon: "logos:firebase",
+		title: "Firebase"
 	},
 	{
 		id: 13,
@@ -74,12 +74,7 @@ const data = [
 	{
 		id: 16,
 		icon: "arcticons:letter-lowercase-w",
-		title: "Whimsical"
-	},
-	{
-		id: 17,
-		icon: "akar-icons:vscode-fill",
-		title: "VSCode"
+		title: "Whimsical",
 	},
 ];
 

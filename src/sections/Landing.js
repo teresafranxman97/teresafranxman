@@ -4,46 +4,57 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Button from "../Components/button";
+
 import {
 	Styled,
 	Container,
 	IconsContainer,
 } from "../Styles/Sections/landingPageStyles";
 import { Icon } from "@iconify/react";
+import background from "../images/background.png";
 
 const Landing = () => {
 	return (
 		<Styled id="/">
-			<Container>
-				<div className="square-container">
-					<div className="square-one"></div>
-				</div>
-				<div className="content">
-					<h1>Hi, I'm Teresa</h1>
-					<p>
-						I am a Front End Developer currently focusing on building quality
-						digital experiences. With a love for design and a passion for
-						building products that are accessible to all, I aim to deliever
-						wonderful user-centered web applications.
-					</p>
-					<Button
-						content="Get to know me"
-						link="#about"
-						primary="false"
-					></Button>
-				</div>
-				<IconsContainer>
-					<a href="https://github.com/teresafranxman97">
-						<Icon className="icon" icon="codicon:github-alt" width={20} />
-					</a>
-					<a href="https://linkedin.com/in/teresa-franxman">
-						<Icon className="icon" icon="akar-icons:linkedin-fill" width={20} />
-					</a>
-				</IconsContainer>
+			<Container
+				className="wrapper"
+				style={{
+					backgroundImage: `url(${background})`,
+					width: "100%",
+					backgroundRepeat: "no-repeat",
+					backgroundPosition: "top",
+					backgroundSize: "cover",
+					backgroundAttachment: "fixed",
+				}}
+			>
+					<div className="content">
+						<p>
+							Crafting <span style={{ color: "#F05F7E" }}>solutions </span>{" "}
+							through <br /> digital{" "}
+							<span style={{ color: "#29B4EF" }}>experiences</span>
+						</p>
+						<Button
+							content="Get to know me"
+							link="#about"
+							primary="false"
+						></Button>
+						<IconsContainer>
+							<a href="https://github.com/teresafranxman97">
+								<Icon icon="akar-icons:github-fill" color="white" width={20} />
+							</a>
+							<a href="https://linkedin.com/in/teresa-franxman">
+								<Icon
+									icon="akar-icons:linkedin-box-fill"
+									color="white"
+									width={20}
+								/>
+							</a>
+						</IconsContainer>
+					</div>
 			</Container>
-			<Projects />
-			<Services />
 			<About />
+			<Services />
+			<Projects />
 			<Contact />
 		</Styled>
 	);

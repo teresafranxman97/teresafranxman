@@ -6,7 +6,6 @@ import {
 } from "../Styles/Sections/ServicesStyles";
 import { Icon } from "@iconify/react";
 import Title from "../Components/Title";
-import ContactMe from "../Components/ContactMe";
 
 const Services = () => {
 	return (
@@ -53,7 +52,6 @@ const Services = () => {
 					</p>
 				</Content>
 			</ContentContainer>
-			<ContactMe />
 		</Container>
 	);
 };

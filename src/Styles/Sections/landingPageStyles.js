@@ -1,21 +1,41 @@
 import styled from "styled-components";
 
-const Styled = styled.div``;
+const Styled = styled.div`
+	height: 100vh;
+`;
 
 const Container = styled.div`
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	align-items: center;
 
-	h1 {
-		font-size: 30px;
+	.content {
+		p {
+			font-size: 64px;
+			font-weight: bold;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.content {
+			p {
+				font-size: 55px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.content {
+			p {
+				font-size: 40px;
+			}
+		}
 	}
 `;
 
 const IconsContainer = styled.div`
-	margin-top: 1rem;
+	margin-top: 4rem;
 
 	a {
 		margin-right: 1rem;

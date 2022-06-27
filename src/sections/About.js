@@ -1,27 +1,50 @@
 import React from "react";
+
 import Title from "../Components/Title";
-import { Styles, ContentContainer } from "../Styles/Sections/AboutStyles";
-// import image from "../images/me.jpg";
+import Button from "../Components/button";
+import photo from "../images/portfolio.jpg";
+import {
+	Styles,
+	ImageContainer,
+	ContentContainer,
+	Wrapper,
+} from "../Styles/Sections/AboutStyles";
 
 const About = () => {
 	return (
 		<Styles id="about">
-			<Title title="Get to know me"></Title>
-			<ContentContainer>
-				{/* <img src={image} alt="teresa" /> */}
-				<p>
-					Hello again! <br />I am Teresa Franxman, a Front End Engineer
-					specializing in the development of quality user-centered digital
-					experiences. With a passion for designing products that focus on
-					usability I aim to deliver effective, accessible, responsive web
-					applications. As a recent graduate of Bloom Institute of Technology I
-					have many valuable skills in web design, object-oriented programming,
-					computer science fundamentals and how to efficiently work within a
-					cross functional team of individuals. Though I am now a proud
-					graduate, I am eager to continue expanding my knowledge of web design
-					and development.
-				</p>
-			</ContentContainer>
+			<Wrapper>
+				<ImageContainer>
+					<div class="top"></div>
+					<div class="left"></div>
+					<div className="img-wrapper">
+						<img src={photo} alt=" portrait of creator" />
+					</div>
+					<div class="bottom"> </div>
+					<div class="right"> </div>
+				</ImageContainer>
+				<ContentContainer>
+					<div className="content-wrapper">
+						<Title title="Get To Know Me" />
+						<p>
+							Hello there! <br /> I’m Teresa Franxman, a Frontend Developer and
+							recent graduate of Bloom Institute of Technology. With a passion
+							for understanding how we, as developers, can improve
+							accessibility, usability and overall aesthetics of a product, I am
+							dedicated to delivering sophisticated user centered experiences.
+							When I’m not busy coding you can find me hiking, spending time
+							with my family or improving my design skills.
+						</p>
+					</div>
+					<div>
+						<Button
+							content="Download CV"
+							link="#about"
+							primary="false"
+						></Button>
+					</div>
+				</ContentContainer>
+			</Wrapper>
 		</Styles>
 	);
 };

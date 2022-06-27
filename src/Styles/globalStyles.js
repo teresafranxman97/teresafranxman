@@ -7,9 +7,9 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         margin: 0;
-        background: #141424;
-        color: #F9FDF7;
-        font-family: 'Tenor Sans', sans-serif;
+        background: #2D2D37;
+        color: white;
+        font-family: poppins;
     }
 
     html {

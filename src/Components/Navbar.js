@@ -27,24 +27,20 @@ function Navbar() {
 						width={30}
 					/>
 				) : (
-					<Icon
-						style={{ color: "#3F3565" }}
-						icon="heroicons-solid:menu-alt-1"
-						width={30}
-					/>
+					<Icon style={{ color: "white" }} icon="ci:menu-alt-05" width={30} />
 				)}
 			</Hamburger>
 			<Menu isOpen={isOpen}>
 				<MenuLink>
-					<a href="#projects">Projects</a>
+					<a href="#about">About</a>
 				</MenuLink>
 				<MenuLink>
 					<a href="#services">Services</a>
 				</MenuLink>
 				<MenuLink>
-					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
 				</MenuLink>
-				<MenuLink>
+				<MenuLink className="contact">
 					<a href="#contact">Contact</a>
 				</MenuLink>
 			</Menu>
