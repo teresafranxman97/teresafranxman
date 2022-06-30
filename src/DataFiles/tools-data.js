@@ -1,80 +1,45 @@
 const data = [
 	{
-		id: 1,
-		icon: "ic:baseline-css",
-		title: "CSS",
-	},
-	{
-		id: 2,
-		icon: "feather:figma",
+		id: 0,
+		icon: "logos:figma",
 		title: "Figma",
 	},
 	{
-		id: 4,
-		icon: "codicon:github-alt",
+		id: 1,
+		icon: "akar-icons:github-fill",
 		title: "Github",
 	},
 	{
-		id: 5,
-		icon: "akar-icons:react-fill",
+		id: 2,
+		icon: "logos:react",
 		title: "React",
 	},
 
 	{
-		id: 6,
-		icon: "fontisto:redux",
+		id: 3,
+		icon: "logos:redux",
 		title: "Redux",
 	},
 
 	{
-		id: 7,
-		icon: "fluent:document-javascript-24-regular",
+		id: 4,
+		icon: "logos:javascript",
 		title: "JavaScript",
 	},
 	{
-		id: 8,
-		icon: "file-icons:sqlite",
-		title: "Sqlite",
-	},
-	{
-		id: 9,
-		icon: "cib:postgresql",
-		title: "Postgresql",
-	},
-	{
-		id: 10,
-		icon: "akar-icons:node-fill",
+		id: 5,
+		icon: "vscode-icons:file-type-node",
 		title: "Node.JS",
 	},
 	{
-		id: 11,
-		icon: "ic:baseline-html",
-		title: "HTML",
-	},
-	{
-		id: 12,
+		id: 6,
 		icon: "logos:firebase",
-		title: "Firebase"
+		title: "Firebase",
 	},
 	{
-		id: 13,
-		icon: "tabler:brand-python",
-		title: "Python",
-	},
-	{
-		id: 14,
-		icon: "ant-design:ant-design-outlined",
-		title: "Ant Design",
-	},
-	{
-		id: 15,
-		icon: "simple-icons:styledcomponents",
+		id: 7,
+		icon: "vscode-icons:file-type-styled",
 		title: "Styled Components",
-	},
-	{
-		id: 16,
-		icon: "arcticons:letter-lowercase-w",
-		title: "Whimsical",
 	},
 ];
 

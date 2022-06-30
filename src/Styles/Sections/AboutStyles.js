@@ -5,6 +5,8 @@ const Styles = styled.main`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 2000px:
+	margin: auto;
 `;
 
 const ImageContainer = styled.section`
@@ -56,10 +58,6 @@ const ImageContainer = styled.section`
 	}
 
 	@media screen and (max-width: 1024px) {
-		width: 40rem;
-	}
-
-	@media screen and (max-width: 800px) {
 		width: 20rem;
 	}
 
@@ -86,19 +84,46 @@ const ContentContainer = styled.section`
 		font-weight: 200;
 	}
 
-	@media screen and (min-width: 1024px) {
-		.content-wrapper p {
-			font-size: 16px;
+	h4 {
+		font-size: 14px;
+		font-weight: 200;
+		letter-spacing: 1px;
+	}
+
+	.tools-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.tool-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		h5 {
+			font-size: 13px;
+			font-weight: 200;
 		}
 	}
 
-	@media screen and (min-width: 801px) {
+	@media screen and (min-width: 1024px) {
 		width: 54rem;
 		justify-content: space-evenly;
 	}
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1024px) {
 		width: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		.tools-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 425px) {
+		.tools-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	@media screen and (max-width: 300px) {
@@ -110,10 +135,11 @@ const ContentContainer = styled.section`
 
 const Wrapper = styled.div`
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	gap: 2rem;
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1024px) {
 		flex-direction: column;
 		align-items: center;
 		gap: 1rem;

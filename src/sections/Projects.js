@@ -18,6 +18,7 @@ const Projects = () => {
 	const [stack, setStack] = useState("");
 	const [site, setSite] = useState("");
 	const [githubLink, setGithubLink] = useState("");
+	const [isHovering, setIsHovering] = useState(-1);
 
 	const getImg = (src) => {
 		setImgSrc(src);
@@ -48,15 +49,25 @@ const Projects = () => {
 		setGithubLink(githubLink);
 	};
 
+	const showProject = (i) => {
+		setIsHovering(i);
+	};
+
+	const hideProject = () => {
+		setIsHovering(-1);
+	};
+
 	return (
 		<ProjectsStyles id="projects">
 			<Title title="My work"></Title>
 			<ContentGrid>
-				{projects.map((project, index) => {
+				{projects.map((project, i) => {
 					return (
 						<Container
 							className="project-img"
-							key={index}
+							onMouseEnter={() => showProject(i)}
+							onMouseLeave={hideProject}
+							key={project.id}
 							onClick={() => {
 								getImg(project.src);
 								getTitle(project.title);
@@ -70,7 +81,12 @@ const Projects = () => {
 							<div className="img-container">
 								<img src={project.src} alt={project.alt} />
 							</div>
-							<p>{project.title}</p>
+							{isHovering === i ? (
+								<div className="show-project">
+									<h6>{project.title}</h6>
+									<button>Learn more</button>
+								</div>
+							) : null }
 						</Container>
 					);
 				})}

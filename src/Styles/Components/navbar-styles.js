@@ -8,8 +8,8 @@ const NavStyles = styled.div`
 	flex-wrap: wrap;
 	position: absolute;
 	top: 0;
-	left: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
-	right: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
+	left: 0;
+	right: 0;
 
 	a {
 		color: ${({ isOpen }) => (isOpen ? "white" : "#F9FDF7")};
@@ -19,9 +19,26 @@ const NavStyles = styled.div`
 		letter-spacing: 1px;
 	}
 
-	@media (min-width: 769px) {
-		left: ${({ isOpen }) => (isOpen ? "0" : "4vw")};
-		right: ${({ isOpen }) => (isOpen ? "0" : "4vw")};
+	@media (min-width: 2000px) {
+		left: "";
+		right: "";
+		width: 2000px;
+		margin: auto;
+	}
+
+	@media (max-width: 2000px) {
+		left: ${({ isOpen }) => (isOpen ? "0" : "10rem")};
+		right: ${({ isOpen }) => (isOpen ? "0" : "10rem")};
+	}
+
+	@media (max-width: 1440px) {
+		left: ${({ isOpen }) => (isOpen ? "0" : "4rem")};
+		right: ${({ isOpen }) => (isOpen ? "0" : "4rem")};
+	}
+
+	@media (max-width: 769px) {
+		left: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
+		right: ${({ isOpen }) => (isOpen ? "0" : "1rem")};
 	}
 `;
 

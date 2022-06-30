@@ -1,5 +1,5 @@
 import React from "react";
-import Services from "./Services";
+// import Services from "./Services";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
@@ -53,7 +53,7 @@ const Landing = () => {
 					</div>
 			</Container>
 			<About />
-			<Services />
+			{/* <Services /> */}
 			<Projects />
 			<Contact />
 		</Styled>

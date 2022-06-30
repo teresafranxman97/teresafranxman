@@ -1,7 +1,8 @@
 import React from "react";
-
+import { Icon } from "@iconify/react";
 import Title from "../Components/Title";
 import Button from "../Components/button";
+import data from "../DataFiles/tools-data";
 import photo from "../images/portfolio.jpg";
 import {
 	Styles,
@@ -35,14 +36,24 @@ const About = () => {
 							When I’m not busy coding you can find me hiking, spending time
 							with my family or improving my design skills.
 						</p>
+						<div className="tools-container">
+							<h4>Tools I've Recently Worked With</h4>
+							<div className="tools-grid">
+								{data.map((tool) => (
+									<div className="tool-wrapper" key={tool.id}>
+										<Icon
+											icon={tool.icon}
+											alt="logo"
+											width={15}
+											className="icon"
+										/>
+										<h5>{tool.title}</h5>
+									</div>
+								))}
+							</div>
+						</div>
 					</div>
-					<div>
-						<Button
-							content="Download CV"
-							link="#about"
-							primary="false"
-						></Button>
-					</div>
+					<Button content="Download CV" link="#about" primary="false"></Button>
 				</ContentContainer>
 			</Wrapper>
 		</Styles>

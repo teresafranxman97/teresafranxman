@@ -23,22 +23,14 @@ const ButtonStyles = styled.div`
 		text-decoration: none;
 	}
 
-	@media (min-width: 767px) {
-		margin-right: 1rem;
-	}
-
 	@media (min-width: 480px) {
 		width: 15rem;
-	}
-
-	@media (min-width: 280px) {
-		margin-bottom: 1rem;
 	}
 `;
 
 ButtonStyles.defaultProps = {
 	theme: {
-		main: "#29B4EF"
+		main: "#29B4EF",
 	},
 };
 

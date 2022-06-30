@@ -7,7 +7,7 @@ import {
 	Hamburger,
 } from "../Styles/Components/navbar-styles";
 import { Icon } from "@iconify/react";
-import logo from "../images/Monochrome on Transparent.png";
+import logo from "../images/White on Transparent.png";
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +34,9 @@ function Navbar() {
 				<MenuLink>
 					<a href="#about">About</a>
 				</MenuLink>
-				<MenuLink>
+				{/* <MenuLink>
 					<a href="#services">Services</a>
-				</MenuLink>
+				</MenuLink> */}
 				<MenuLink>
 					<a href="#projects">Projects</a>
 				</MenuLink>
