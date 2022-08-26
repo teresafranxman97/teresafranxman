@@ -7,9 +7,20 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         margin: 0;
-        background: #2D2D37;
-        color: white;
-        font-family: poppins;
+        background: #FAFAFA;
+        font-family: 'Inter', sans-serif;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    #/, #about, #services, #projects, #contact {
+        
+    }
+
+    p {
+        color: #909090;
     }
 
     html {

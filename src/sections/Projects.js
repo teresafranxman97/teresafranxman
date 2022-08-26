@@ -4,7 +4,7 @@ import {
 	ContentGrid,
 	Container,
 } from "../Styles/Sections/ProjectsStyles";
-import data from "../DataFiles/data";
+import data from "../data";
 import Title from "../Components/Title";
 import Modal from "../Components/Modal";
 

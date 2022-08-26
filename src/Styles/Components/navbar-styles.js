@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-	background: ${({ isOpen }) => (isOpen ? "#17ADEE" : "")};
+	background: ${({ isOpen }) => (isOpen ? "#17181b" : "")};
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -10,14 +10,6 @@ const NavStyles = styled.div`
 	top: 0;
 	left: 0;
 	right: 0;
-
-	a {
-		color: ${({ isOpen }) => (isOpen ? "white" : "#F9FDF7")};
-		text-decoration: none;
-		font-size: 15px;
-		font-weight: 200;
-		letter-spacing: 1px;
-	}
 
 	@media (min-width: 2000px) {
 		left: "";
@@ -54,20 +46,10 @@ const Hamburger = styled.div`
 
 const Menu = styled.div`
 	display: flex;
+	gap: 1rem;
 	justify-content: space-between;
 	position: relative;
 	align-items: ${({ isOpen }) => (isOpen ? "" : "baseline")};
-
-	.contact {
-		border: ${({ isOpen }) => (isOpen ? "" : "1px solid #29b4ef")};
-		border-radius: 2px;
-		background: #29b4ef;
-		padding: 0 10px;
-		justify-content: ${({ isOpen }) => (isOpen ? "center" : "")};
-		display: flex;
-		align-items: center;
-		height: 40px;
-	}
 
 	@media (max-width: 768px) {
 		overflow: hidden;
@@ -86,8 +68,14 @@ const MenuLink = styled.div`
 	font-weight: 400;
 	transition: all 0.3s ease-in;
 
-	&:hover {
-		color: #ff781f;
+	a {
+		text-decoration: none;
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+
+	.notheme {
+		color: #303336;
 	}
 `;
 const Logo = styled.div`

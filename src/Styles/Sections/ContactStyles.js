@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ContactStyles = styled.div`
+const ContactStyles = styled.section`
 	display: flex;
 	flex-direction: column;
 	padding: 10vh 0;

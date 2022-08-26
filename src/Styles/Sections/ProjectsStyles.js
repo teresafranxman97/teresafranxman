@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectsStyles = styled.div`
+const ProjectsStyles = styled.section`
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;

@@ -35,22 +35,6 @@ const Services = () => {
 						responsive and visually appealing user interfaces.
 					</p>
 				</Content>
-				<Content>
-					<Icon className="icon" icon="bxs:data" />
-					<h3>Back End Development</h3>
-					<p>
-						I am knowledgable in server-side development and comfortable working
-						with databases.
-					</p>
-				</Content>
-				<Content>
-					<Icon className="icon" icon="akar-icons:search" />
-					<h3>User Research</h3>
-					<p>
-						I prioritize understanding the user, and product to be designed
-						through extensive research.
-					</p>
-				</Content>
 			</ContentContainer>
 		</Container>
 	);

@@ -4,59 +4,67 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Button from "../Components/button";
-
+import geometricShapes from "../images/shapes.png";
+import { Icon } from "@iconify/react";
 import {
 	Styled,
 	Container,
-	IconsContainer,
+	IconsContainerOuter,
 } from "../Styles/Sections/landingPageStyles";
-import { Icon } from "@iconify/react";
-import background from "../images/background.png";
+import { ThemeProvider } from "styled-components";
+import { invertTheme, theme } from "../Styles/Components/ButtonStyles";
 
 const Landing = () => {
 	return (
-		<Styled id="/">
-			<Container
-				className="wrapper"
-				style={{
-					backgroundImage: `url(${background})`,
-					width: "100%",
-					backgroundRepeat: "no-repeat",
-					backgroundPosition: "top",
-					backgroundSize: "cover",
-					backgroundAttachment: "fixed",
-				}}
-			>
-					<div className="content">
+		<ThemeProvider theme={theme}>
+			<Styled id="/">
+				<Container>
+					<div className="content-container">
+						<h1>
+							Crafting solutions through <br /> digital experiences
+						</h1>
 						<p>
-							Crafting <span style={{ color: "#F05F7E" }}>solutions </span>{" "}
-							through <br /> digital{" "}
-							<span style={{ color: "#29B4EF" }}>experiences</span>
+							Hi! I’m Teresa Franxman, a Front End Developer focused on builing
+							user centered products for the web.
 						</p>
-						<Button
-							content="Get to know me"
-							link="#about"
-							primary="false"
-						></Button>
-						<IconsContainer>
-							<a href="https://github.com/teresafranxman97">
-								<Icon icon="akar-icons:github-fill" color="white" width={20} />
-							</a>
-							<a href="https://linkedin.com/in/teresa-franxman">
+						<div className="buttons">
+							<Button content="View My Work" link="#contact"></Button>
+
+							<ThemeProvider theme={invertTheme}>
+								<Button content="Get To Know Me" link="#about"></Button>
+							</ThemeProvider>
+						</div>
+						<IconsContainerOuter>
+							<h6>Let's Connect</h6>
+							<div  className="icons">
+								<Icon
+									icon="akar-icons:github-fill"
+									width={20}
+									style={{ color: "#303336" }}
+								/>
 								<Icon
 									icon="akar-icons:linkedin-box-fill"
-									color="white"
 									width={20}
+									style={{ color: "#303336" }}
 								/>
-							</a>
-						</IconsContainer>
+								<Icon
+									icon="ant-design:mail-filled"
+									width={20}
+									style={{ color: "#303336" }}
+								/>
+							</div>
+						</IconsContainerOuter>
 					</div>
-			</Container>
-			<About />
-			{/* <Services /> */}
-			<Projects />
-			<Contact />
-		</Styled>
+					<div className="image-container">
+						<img src={geometricShapes} alt="geometric shapes" />
+					</div>
+				</Container>
+				<About />
+				{/* <Services /> */}
+				<Projects />
+				<Contact />
+			</Styled>
+		</ThemeProvider>
 	);
 };
 

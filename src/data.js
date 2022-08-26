@@ -1,5 +1,5 @@
-import clone from "../images/googleclone - Copy.png";
-import thebodega from "../images/thebodega.png";
+import clone from "./images/googleclone - Copy.png";
+import thebodega from "./images/thebodega.png";
 
 const data = [
 	{
@@ -23,18 +23,7 @@ const data = [
 		stack: "CSS, HTML",
 		site: "https://teresafranxman97.github.io/google-clone.github.io/",
 		githubLink: "https://teresafranxman97.github.io/google-clone.github.io/",
-	},
-	// {
-	// 	id: 2,
-	// 	src: `${thebodega}`,
-	// 	title: "Barber Shop",
-	// 	position: "Front End Developer",
-	// 	description:
-	// 		"A web app that was developed to help aspiring developers of disadvantaged backgrounds make their transition into the tech field. Underdog Devs provides a 'go at your own pace' program that connects future devs(mentees) with industry experts (mentors) where they can learn the skills required to become a successful developer.",
-	// 	stack: "React, Ant Design, Node.Js, Heroku, Okta",
-	// 	site: "",
-	// 	githubLink: "https://github.com/BloomTech-Labs/underdog-devs-fe-a",
-	// },
+	}
 ];
 
 export default data;

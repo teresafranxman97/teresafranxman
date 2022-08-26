@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 const TitleStyles = styled.div`
 	font-size: 24px;
-	font-family: Tenor Sans;
 	margin: 1rem 0;
 	display: flex;
 	flex-direction: column;
-	gap: .5vh;
+	gap: 0.5vh;
 
 	span {
 		background: #29b4ef;
@@ -15,7 +14,7 @@ const TitleStyles = styled.div`
 	}
 
 	@media (min-width: 1024px) {
-		font-size: 30px;
+		font-size: 128px;
 	}
 
 	@media screen and (max-width: 480px) {
